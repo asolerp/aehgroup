@@ -20,7 +20,7 @@ export default function Home() {
               width={236}
               height={159}
               src="https://res.cloudinary.com/caskchain/image/upload/v1695036478/AEHGroup/aeh_logo.png"
-              className="w-24 h-16 lg:w-48 lg:h-36"
+              className="w-24 h-16 lg:w-48 lg:h-36 mb-20 lg:mb-0"
             />
             <div className="flex flex-col items-center space-y-10 w-full mt-22">
               <div className="flex flex-col items-center">
