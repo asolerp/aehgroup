@@ -1,8 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import NavBar from './components/NavBar'
+import { MenuContextProvider } from './context/MenuContext'
+import Menu from './components/Menu'
 
 export const metadata: Metadata = {
   title: 'AEH Group',
@@ -16,7 +17,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <MenuContextProvider>
+          <Menu />
+          <div className="p-10">
+            <NavBar />
+            {children}
+          </div>
+        </MenuContextProvider>
+      </body>
     </html>
   )
 }
