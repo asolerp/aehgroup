@@ -20,7 +20,7 @@ export default function RootLayout({
       <body>
         <MenuContextProvider>
           <Menu />
-          <div className="p-10">
+          <div>
             <NavBar />
             {children}
           </div>

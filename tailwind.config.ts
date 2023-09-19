@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        aeh_primary: '#84A095',
+        aeh_secondary: '#EFE9E2',
+        aeh_tertiary: '#3F5032',
+        aeh_quaternary: '#A5A5A5',
+      },
       backgroundImage: {
         aeh_bg_1:
           'url("https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_1.png")',

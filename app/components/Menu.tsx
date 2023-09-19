@@ -44,7 +44,7 @@ export default function Menu() {
   }, [menuOpen])
 
   const animationVariants = {
-    hidden: { x: '100%', opacity: 0 },
+    hidden: { x: '100%', opacity: 1 },
     visible: { x: 0, opacity: 1 },
   }
 
@@ -55,9 +55,13 @@ export default function Menu() {
       initial="hidden"
       animate={menuOpen ? 'visible' : 'hidden'}
       variants={animationVariants}
-      transition={{ duration: 0.5 }}
+      transition={{
+        type: 'spring',
+        bounce: 0.05,
+        duration: 1,
+      }}
       onAnimationComplete={handleOnAnimationComplete}
-      className="fixed inset-0 top-0 z-10 w-full h-full"
+      className="fixed inset-0 top-0 z-20 w-full h-full"
     >
       <div className="grid grid-cols-2 w-full h-full">
         <div className="cols-span-1 bg-white">
