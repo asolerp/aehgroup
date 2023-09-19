@@ -16,4 +16,14 @@
   }
 }
 
-
+@keyframes underline {
+  0% {
+    text-decoration: underline;
+  }
+  50% {
+    text-decoration: none;
+  }
+  100% {
+    text-decoration: underline;
+  }
+}
