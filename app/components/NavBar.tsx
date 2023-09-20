@@ -29,10 +29,16 @@ export default function NavBar() {
         animate="visible"
         variants={variants}
         transition={{ duration: 1, ease: 'easeInOut' }}
-        className="flex flex-row items-center justify-between p-10"
+        className="flex flex-row items-center justify-center lg:justify-between pt-10 lg:p-10 w-full"
       >
-        <Image src={LOGO_ROUTE} alt="AEH Group" width={100} height={100} />
-        <div className="flex flex-row flex-grow justify-center space-x-20">
+        <Image
+          src={LOGO_ROUTE}
+          alt="AEH Group"
+          width={100}
+          height={100}
+          className="w-[100px] h-[8¡60px] lg:w-[150px] lg:h-[100px]"
+        />
+        <div className="lg:flex lg:flex-row flex-grow justify-center space-x-20 hidden">
           <Link href="/projectos">
             <p className="font-sans text-2xl font-light">Projects</p>
           </Link>
@@ -43,14 +49,14 @@ export default function NavBar() {
             <p className="font-sans text-2xl font-light">Sobre nosotros</p>
           </Link>
         </div>
-        <div className="w-[100px]"></div>
+        <div className="hidden lg:block lg:w-[100px]"></div>
       </motion.div>
       <motion.div
         initial="hidden"
         animate="visible"
         variants={variants}
         transition={{ duration: 1, ease: 'easeInOut' }}
-        className="fixed top-12 right-10 z-50 w-[100px]"
+        className="absolute right-4 top-10 lg:fixed lg:top-12 lg:right-10 z-50 lg:w-[100px]"
       >
         <Hamburger size={30} onToggle={(state) => handleMenuToggle(state)} />
       </motion.div>

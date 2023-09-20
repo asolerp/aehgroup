@@ -29,7 +29,7 @@ const MainTitleAnimation: React.FC<Props> = ({
   }
 
   return (
-    <div className="flex flex-row justify-center flex-wrap space-x-10">
+    <div className="flex flex-row justify-center flex-wrap space-x-2 lg:space-x-10">
       {words.map((word, index) => (
         <motion.div
           key={index}
@@ -45,7 +45,7 @@ const MainTitleAnimation: React.FC<Props> = ({
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-aeh_primary font-sans text-[100px] tracking-widest"
+                className="text-aeh_primary font-sans text-[32px] lg:text-[100px] tracking-widest"
               >
                 {letter}
               </motion.span>

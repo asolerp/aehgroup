@@ -16,7 +16,7 @@ const mapImagesByPath: ImageMap = {
   '/home':
     'https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_1.png',
   '/projectos':
-    'https://res.cloudinary.com/caskchain/image/upload/v1695115178/AEHGroup/aeh_bg_3.png',
+    'https://res.cloudinary.com/caskchain/image/upload/v1695192615/AEHGroup/aeh_bg_3.png',
   '/servicios':
     'https://res.cloudinary.com/caskchain/image/upload/v1695115179/AEHGroup/aeh_bg_2.png',
   '/nosotros':

@@ -9,29 +9,15 @@ import { motion } from 'framer-motion'
 import AboutUsSection from './components/AboutUsSection'
 import { Carousel } from 'react-responsive-carousel'
 import Button from '../components/Button'
+import ProjectsSection from './components/ProjectsSection'
 
 export default function Home() {
   const [letterAnimationFinished, setLetterAnimationFinished] = useState(false)
 
-  const carouselRef = useRef<any>(null)
-
-  const handleNextClick = () => {
-    if (carouselRef.current) {
-      carouselRef.current.increment()
-    }
-  }
-
-  const handlePrevClick = () => {
-    console.log('prev')
-    if (carouselRef.current) {
-      carouselRef.current.decrement()
-    }
-  }
-
   return (
     <main className="flex min-h-screen">
-      <div className="w-full flex flex-col justify-center mt-20">
-        <div className="px-20 z-10">
+      <div className="w-full flex flex-col justify-center mt-14 lg:mt-20">
+        <div className="lg:px-20 z-10">
           <MainTitleAnimation
             inputString="CONSTRUIMOS Y TRANSFORMARMOS EL HOGAR PERFECTO"
             onAnimationFinished={() => setLetterAnimationFinished(true)}
@@ -49,53 +35,71 @@ export default function Home() {
                   initial={{ scale: 0 }}
                   animate={{ scale: letterAnimationFinished ? 1 : 0 }}
                   transition={{ duration: 1 }}
-                  className="-mt-36  object-contain"
+                  className="lg:-mt-36 mt-10  object-contain"
                 />
               </div>
               <AboutUsSection />
-              <div className="mt-20">
-                <div className="relative">
-                  <Carousel
-                    ref={carouselRef}
-                    showArrows={false}
-                    showStatus={false}
-                    showThumbs={false}
-                  >
+              <ProjectsSection />
+              <div className="flex flex-col items-center mb-20">
+                <div className="py-20">
+                  <h2 className="text-gray-800 font-sans text-[32px] lg:text-[70px] tracking-widest text-center">
+                    CONTEMPLA EL ASOMBRO DE TU HOGAR RENACIDO
+                  </h2>
+                </div>
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-10 px-4 lg:px-0">
+                  <div className="col-span-1">
                     <Image
-                      alt=""
-                      width={1400}
-                      height={1000}
-                      className="w-full h-[1000px] object-cover"
-                      src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_2.png"
-                    />
-                    <Image
-                      alt=""
-                      width={1400}
-                      height={1000}
-                      className="w-full h-[1000px] object-cover"
+                      alt="AEH Group Hero"
                       src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_1.png"
+                      width={480}
+                      height={480}
+                      className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
                     />
-                  </Carousel>
-                  <div className="w-full px-10 absolute z-10 bottom-14 flex flex-row items-center justify-between">
-                    <div>
-                      <Button text="Projectos" mode="secondary" />
-                    </div>
-                    <div className="flex flex-row space-x-5">
-                      <Image
-                        alt="AEH Group left icon"
-                        src="https://res.cloudinary.com/caskchain/image/upload/v1695134267/AEHGroup/aeh_left_icon.png"
-                        width={100}
-                        height={100}
-                        onClick={handlePrevClick}
-                      />
-                      <Image
-                        alt="AEH Group right icon"
-                        src="https://res.cloudinary.com/caskchain/image/upload/v1695134267/AEHGroup/aeh_right_icon.png"
-                        width={100}
-                        height={100}
-                        onClick={handleNextClick}
-                      />
-                    </div>
+                  </div>
+                  <div className="col-span-1">
+                    <Image
+                      alt="AEH Group Hero"
+                      src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_2.png"
+                      width={480}
+                      height={480}
+                      className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
+                    />
+                  </div>
+                  <div className="col-span-1">
+                    <Image
+                      alt="AEH Group Hero"
+                      src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_3.png"
+                      width={480}
+                      height={480}
+                      className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
+                    />
+                  </div>
+                  <div className="col-span-1">
+                    <Image
+                      alt="AEH Group Hero"
+                      src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_2.png"
+                      width={480}
+                      height={480}
+                      className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
+                    />
+                  </div>
+                  <div className="col-span-1">
+                    <Image
+                      alt="AEH Group Hero"
+                      src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_3.png"
+                      width={480}
+                      height={480}
+                      className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
+                    />
+                  </div>
+                  <div className="col-span-1">
+                    <Image
+                      alt="AEH Group Hero"
+                      src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_1.png"
+                      width={480}
+                      height={480}
+                      className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
+                    />
                   </div>
                 </div>
               </div>

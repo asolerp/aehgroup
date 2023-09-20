@@ -16,7 +16,7 @@ const ImageTransition: React.FC<ImageTransitionProps> = ({ imageSrc }) => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
-        className="object-cover w-full h-full"
+        className=" object-cover  w-full h-screen"
       />
     </AnimatePresence>
   )
