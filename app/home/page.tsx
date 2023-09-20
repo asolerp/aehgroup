@@ -10,6 +10,7 @@ import AboutUsSection from './components/AboutUsSection'
 import { Carousel } from 'react-responsive-carousel'
 import Button from '../components/Button'
 import ProjectsSection from './components/ProjectsSection'
+import ServicesSection from './components/ServicesSection'
 
 export default function Home() {
   const [letterAnimationFinished, setLetterAnimationFinished] = useState(false)
@@ -40,69 +41,7 @@ export default function Home() {
               </div>
               <AboutUsSection />
               <ProjectsSection />
-              <div className="flex flex-col items-center mb-20">
-                <div className="py-20">
-                  <h2 className="text-gray-800 font-sans text-[32px] lg:text-[70px] tracking-widest text-center">
-                    CONTEMPLA EL ASOMBRO DE TU HOGAR RENACIDO
-                  </h2>
-                </div>
-                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-10 px-4 lg:px-0">
-                  <div className="col-span-1">
-                    <Image
-                      alt="AEH Group Hero"
-                      src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_1.png"
-                      width={480}
-                      height={480}
-                      className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
-                    />
-                  </div>
-                  <div className="col-span-1">
-                    <Image
-                      alt="AEH Group Hero"
-                      src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_2.png"
-                      width={480}
-                      height={480}
-                      className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
-                    />
-                  </div>
-                  <div className="col-span-1">
-                    <Image
-                      alt="AEH Group Hero"
-                      src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_3.png"
-                      width={480}
-                      height={480}
-                      className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
-                    />
-                  </div>
-                  <div className="col-span-1">
-                    <Image
-                      alt="AEH Group Hero"
-                      src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_2.png"
-                      width={480}
-                      height={480}
-                      className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
-                    />
-                  </div>
-                  <div className="col-span-1">
-                    <Image
-                      alt="AEH Group Hero"
-                      src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_3.png"
-                      width={480}
-                      height={480}
-                      className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
-                    />
-                  </div>
-                  <div className="col-span-1">
-                    <Image
-                      alt="AEH Group Hero"
-                      src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_1.png"
-                      width={480}
-                      height={480}
-                      className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
-                    />
-                  </div>
-                </div>
-              </div>
+              <ServicesSection />
             </div>
           )}
         </div>

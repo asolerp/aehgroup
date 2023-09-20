@@ -3,7 +3,7 @@ import Button from '@/app/components/Button'
 
 export default function AboutUsSection() {
   return (
-    <div className="px-6 lg:px-10">
+    <div className="px-6 lg:px-32">
       <div className="w-full mt-20 mb-10 lg:mb-20">
         <div>
           <h3 className="font-sans text-3xl lg:text-5xl text-gray-800 tracking-widest font-normal lg:w-3/5 lg:leading-[55px]">
