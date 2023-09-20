@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import { Parallax, useParallax } from 'react-scroll-parallax'
 
 type Props = {
   inputString: string
@@ -14,6 +15,8 @@ const MainTitleAnimation: React.FC<Props> = ({
 }) => {
   const [animationsCompleted, setAnimationsCompleted] = useState(0)
   const [words, setWords] = useState<string[]>([])
+  const [speed, setSpeed] = useState(0)
+  const { ref } = useParallax<HTMLDivElement>({ speed })
 
   useEffect(() => {
     const splitedWords = inputString.split(' ') // Separa la frase en palabra
@@ -24,12 +27,16 @@ const MainTitleAnimation: React.FC<Props> = ({
     setAnimationsCompleted(animationsCompleted + 1)
 
     if (animationsCompleted === words.length - 1) {
+      setSpeed(10)
       onAnimationFinished()
     }
   }
 
   return (
-    <div className="flex flex-row justify-center flex-wrap space-x-2 lg:space-x-10">
+    <div
+      ref={ref}
+      className="flex flex-row justify-center flex-wrap space-x-2 lg:space-x-10"
+    >
       {words.map((word, index) => (
         <motion.div
           key={index}

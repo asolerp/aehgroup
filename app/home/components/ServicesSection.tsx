@@ -1,13 +1,16 @@
 import Button from '@/app/components/Button'
 import Image from 'next/image'
+import FadeInElement from './FadeInElement'
 
 export default function ServicesSection() {
   return (
-    <div className="flex flex-col items-center mb-20">
+    <div className="flex flex-col items-center lg:mb-20 mb-10">
       <div className="py-20">
-        <h2 className="text-gray-800 font-sans text-[32px] lg:text-[70px] tracking-widest text-center">
-          CONTEMPLA EL ASOMBRO DE TU HOGAR RENACIDO
-        </h2>
+        <FadeInElement>
+          <h2 className="text-gray-800 font-sans text-[32px] lg:text-[70px] tracking-widest text-center">
+            CONTEMPLA EL ASOMBRO DE TU HOGAR RENACIDO
+          </h2>
+        </FadeInElement>
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-10 px-4 lg:px-0">
         <div className="col-span-1">
