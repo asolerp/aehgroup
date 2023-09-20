@@ -36,7 +36,7 @@ export default function NavBar() {
           alt="AEH Group"
           width={100}
           height={100}
-          className="w-[100px] h-[8¡60px] lg:w-[150px] lg:h-[100px]"
+          className="w-[120px] h-[80px] lg:w-[150px] lg:h-[100px]"
         />
         <div className="lg:flex lg:flex-row flex-grow justify-center space-x-20 hidden">
           <Link href="/projectos">
