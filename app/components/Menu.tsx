@@ -86,7 +86,7 @@ export default function Menu() {
                   onHover={() => handleImageChange(item.path)}
                 >
                   <Link href={item.path}>
-                    <p className="font-sans text-[60px] lg:text-[80px] font-light tracking-widest">
+                    <p className="font-sans text-[40px] lg:text-[80px] font-light tracking-widest">
                       {item.label}
                     </p>
                   </Link>
@@ -100,6 +100,7 @@ export default function Menu() {
               alt="AEH Group Instagram"
               width={50}
               height={50}
+              className="object-contain lg:w-[50px] lg:h-[50px] w-[35px] h-[35px]"
             />
             <p className="font-sans text-[30px] lg:text-[40px] text-aeh_primary">
               ES | EN | DE
