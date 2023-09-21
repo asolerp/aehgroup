@@ -54,7 +54,7 @@ export default function RootLayout({
                   </p>
                 </div>
                 <div className="col-span-1 flex lg:justify-end items-center">
-                  <div className="p-6 lg:p-8 bg-white rounded-full">
+                  <div className="p-4 lg:p-8 bg-white rounded-full mt-2">
                     <Image
                       src="https://res.cloudinary.com/caskchain/image/upload/v1695040186/AEHGroup/aeh_instagram.png"
                       alt="AEH Group Instagram"

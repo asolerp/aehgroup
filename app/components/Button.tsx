@@ -16,15 +16,15 @@ const Button: React.FC<Props> = ({ text, mode = 'primary' }) => {
 
   return (
     <div
-      className={`flex flex-row w-fit items-center justify-between ${bgContainer} py-4 px-6 rounded-full space-x-6 cursor-pointer`}
+      className={`flex flex-row w-fit items-center justify-between ${bgContainer} lg:py-4 lg:px-6 py-2 px-4 rounded-full space-x-6 cursor-pointer`}
     >
-      <p className={`${textButton} text-2xl  font-sans`}>{text}</p>
+      <p className={`${textButton} text-lg lg:text-2xl  font-sans`}>{text}</p>
       <Image
         alt="AEH Group circle icon"
         src={`https://res.cloudinary.com/caskchain/image/upload/v1695129447/AEHGroup/${icon}`}
         width={25}
         height={25}
-        className="object-contain"
+        className="object-contain lg:w-[25px] lg:h-[25px] w-[15px] h-[15px]"
       />
     </div>
   )

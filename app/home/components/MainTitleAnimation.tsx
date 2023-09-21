@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { Parallax, useParallax } from 'react-scroll-parallax'
+import { useParallax } from 'react-scroll-parallax'
 
 type Props = {
   inputString: string
@@ -35,14 +35,14 @@ const MainTitleAnimation: React.FC<Props> = ({
   return (
     <div
       ref={ref}
-      className="flex flex-row justify-center flex-wrap space-x-2 lg:space-x-10"
+      className="flex flex-row justify-center flex-wrap space-x-4 lg:space-x-10"
     >
       {words.map((word, index) => (
         <motion.div
           key={index}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: index * 0.1 }}
+          transition={{ duration: 1, delay: index * 0.1 }}
           onAnimationComplete={handleAnimationComplete}
         >
           <>
@@ -51,8 +51,8 @@ const MainTitleAnimation: React.FC<Props> = ({
                 key={index}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-aeh_primary font-sans text-[32px] lg:text-[100px] tracking-widest"
+                transition={{ duration: 1, delay: index * 0.1 }}
+                className="text-aeh_primary font-sans text-[28px] lg:text-[100px] tracking-wider"
               >
                 {letter}
               </motion.span>
