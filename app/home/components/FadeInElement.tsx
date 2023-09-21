@@ -14,8 +14,8 @@ const FadeInElement: React.FC<Props> = ({ children }) => {
   })
 
   const fadeInAnimation = {
-    hidden: { opacity: 0, y: -10 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    hidden: { scaleY: 0, transition: { duration: 1 } },
+    visible: { scaleY: 1, transition: { duration: 1 } },
   }
 
   return (

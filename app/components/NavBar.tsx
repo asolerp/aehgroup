@@ -39,14 +39,20 @@ export default function NavBar() {
           className="w-[120px] h-[80px] lg:w-[150px] lg:h-[100px]"
         />
         <div className="lg:flex lg:flex-row flex-grow justify-center space-x-20 hidden">
+          <Link href="/home">
+            <p className="font-sans text-2xl font-light">Home</p>
+          </Link>
           <Link href="/projectos">
-            <p className="font-sans text-2xl font-light">Projects</p>
+            <p className="font-sans text-2xl font-light">Proyectos</p>
           </Link>
           <Link href="/servicios">
             <p className="font-sans text-2xl font-light">Servicios</p>
           </Link>
           <Link href="/equipo">
-            <p className="font-sans text-2xl font-light">Sobre nosotros</p>
+            <p className="font-sans text-2xl font-light">Equipo</p>
+          </Link>
+          <Link href="/equipo">
+            <p className="font-sans text-2xl font-light">Contacta</p>
           </Link>
         </div>
         <div className="hidden lg:block lg:w-[100px]"></div>

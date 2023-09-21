@@ -29,9 +29,10 @@ const itemVariants: Variants = {
 
 const menuItems = [
   { path: '/home', label: 'Home' },
-  { path: '/projectos', label: 'Projectos' },
+  { path: '/proyectos', label: 'Proyectos' },
   { path: '/servicios', label: 'Servicios' },
-  { path: '/nosotros', label: 'El Equipo' },
+  { path: '/nosotros', label: 'Equipo' },
+  { path: '/contacto', label: 'Contacta' },
 ]
 
 export default function Menu() {

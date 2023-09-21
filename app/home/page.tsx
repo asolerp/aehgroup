@@ -22,7 +22,7 @@ export default function Home() {
         <div className="w-full flex flex-col justify-center mt-20">
           <div className="lg:px-20 z-10">
             <MainTitleAnimation
-              inputString="CONSTRUIMOS Y TRANSFORMARMOS EL HOGAR PERFECTO"
+              inputString="CONSTRUIMOS Y TRANSFORMAMOS EL HOGAR PERFECTO"
               onAnimationFinished={() => setLetterAnimationFinished(true)}
             />
           </div>
