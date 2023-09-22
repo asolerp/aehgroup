@@ -24,6 +24,7 @@ const FadeInElement: React.FC<Props> = ({ children }) => {
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
       variants={fadeInAnimation}
+      className="flex justify-center"
     >
       {children}
     </motion.div>

@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <ParallaxProvider>
-      <main className="flex min-h-screen">
+      <main className="flex min-h-screen bg-white">
         <div className="w-full flex flex-col justify-center mt-20">
           <div className="lg:px-20 z-10">
             <MainTitleAnimation

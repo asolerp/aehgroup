@@ -70,8 +70,8 @@ export default function ServicesSection() {
         </div>
       </div>
       <div className="px-6 lg:px-32">
-        <div className="w-full mt-20 mb-10 lg:mb-20">
-          <Parallax speed={10}>
+        <div className="w-full mt-20 mb-4 lg:mb-20">
+          <Parallax speed={5}>
             <div className="flex flex-row justify-end">
               <h3 className="font-sans text-3xl lg:text-[50px] text-gray-600 tracking-widest font-normal lg:w-3/5 lg:leading-tight self-end">
                 En cada proyecto, un compromiso sublime que supera expectativas,
@@ -80,8 +80,8 @@ export default function ServicesSection() {
             </div>
           </Parallax>
         </div>
-        <div className="flex flex-col lg:grid lg:grid-cols-2 ">
-          <Parallax speed={10}>
+        <Parallax speed={5}>
+          <div className="flex flex-col lg:grid lg:grid-cols-2 ">
             <div className="col-span-1 mb-10 lg:mb-0 pl-14 lg:pl-0">
               <h4 className="text-xl lg:text-3xl font-thin font-sans text-gray-600 leading-normal">
                 Nuestra dedicación a la excelencia se refleja en cada proyecto
@@ -91,11 +91,11 @@ export default function ServicesSection() {
                 nuestros clientes en cada paso del camino.
               </h4>
             </div>
-          </Parallax>
-          <div className="col-span-1 flex flex-col justify-end items-start lg:items-end">
-            <Button mode="primary" text="Servicios" />
+            <div className="col-span-1 flex flex-col justify-end items-start lg:items-end">
+              <Button mode="primary" text="Servicios" />
+            </div>
           </div>
-        </div>
+        </Parallax>
       </div>
     </div>
   )

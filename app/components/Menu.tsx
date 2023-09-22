@@ -9,6 +9,7 @@ import UnderlineAnimation from './UnderlineAnimation'
 import useMenuHandler from '../hooks/useMenuHandler'
 import ImageTransition from './ImageTransition'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 const listVariants: Variants = {
   hidden: { opacity: 0, x: -50 },
@@ -31,19 +32,25 @@ const menuItems = [
   { path: '/home', label: 'Home' },
   { path: '/proyectos', label: 'Proyectos' },
   { path: '/servicios', label: 'Servicios' },
-  { path: '/nosotros', label: 'Equipo' },
+  { path: '/equipo', label: 'Equipo' },
   { path: '/contacto', label: 'Contacta' },
 ]
 
 export default function Menu() {
   const [finished, setFinished] = useState(false)
-  const { menuOpen } = useMenuContext()
+  const { menuOpen, setMenuOpen } = useMenuContext()
   const { getIsMenuActive, imageSrc, handleImageChange } = useMenuHandler()
+  const router = useRouter()
 
   const handleOnAnimationComplete = () => {
     if (!menuOpen) {
       setFinished(true)
     }
+  }
+
+  const handleRouteChange = (path: string) => {
+    setMenuOpen(false)
+    router.push(path)
   }
 
   useEffect(() => {
@@ -86,11 +93,12 @@ export default function Menu() {
                   isActive={getIsMenuActive(item.path)}
                   onHover={() => handleImageChange(item.path)}
                 >
-                  <Link href={item.path}>
-                    <p className="font-sans text-[40px] lg:text-[80px] font-light tracking-widest">
-                      {item.label}
-                    </p>
-                  </Link>
+                  <p
+                    onClick={() => handleRouteChange(item.path)}
+                    className="font-sans text-[40px] lg:text-[80px] font-light tracking-widest cursor-pointer"
+                  >
+                    {item.label}
+                  </p>
                 </UnderlineAnimation>
               </motion.li>
             ))}

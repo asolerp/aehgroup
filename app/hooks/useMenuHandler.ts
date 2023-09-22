@@ -8,7 +8,7 @@ type ImageMap = {
   '/home': string
   '/proyectos': string
   '/servicios': string
-  '/nosotros': string
+  '/equipo': string
   '/contacto': string
   [key: string]: string | undefined
 }
@@ -20,7 +20,7 @@ const mapImagesByPath: ImageMap = {
     'https://res.cloudinary.com/caskchain/image/upload/v1695192615/AEHGroup/aeh_bg_3.png',
   '/servicios':
     'https://res.cloudinary.com/caskchain/image/upload/v1695115179/AEHGroup/aeh_bg_2.png',
-  '/nosotros':
+  '/equipo':
     'https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_1.png',
   '/contacto':
     'https://res.cloudinary.com/caskchain/image/upload/v1695192615/AEHGroup/aeh_bg_3.png',
