@@ -55,7 +55,7 @@ export default function NavBar() {
                 <Link href="/home">
                   <p className="font-sans text-2xl font-light">Home</p>
                 </Link>
-                <Link href="/projectos">
+                <Link href="/proyectos">
                   <p className="font-sans text-2xl font-light">Proyectos</p>
                 </Link>
                 <Link href="/servicios">
@@ -64,7 +64,7 @@ export default function NavBar() {
                 <Link href="/equipo">
                   <p className="font-sans text-2xl font-light">Equipo</p>
                 </Link>
-                <Link href="/equipo">
+                <Link href="/contacta">
                   <p className="font-sans text-2xl font-light">Contacta</p>
                 </Link>
               </div>

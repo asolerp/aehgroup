@@ -21,7 +21,7 @@ export default function AboutUsSection() {
             <Button mode="primary" text="About Us" />
           </div>
           <div className="col-span-1 mb-10 lg:mb-0 pl-14 lg:pl-0">
-            <h4 className="text-xl lg:text-3xl font-thin font-sans text-gray-600 leading-normal">
+            <h4 className="text-xl lg:text-3xl font-thin font-sans text-gray-600 leading-normal tracking-widest">
               Nuestra dedicación a la excelencia se refleja en cada proyecto que
               llevamos a cabo. Desde el primer contacto hasta la entrega final,
               nos esforzamos por brindar un servicio profesional y de calidad.

@@ -33,7 +33,7 @@ const menuItems = [
   { path: '/proyectos', label: 'Proyectos' },
   { path: '/servicios', label: 'Servicios' },
   { path: '/equipo', label: 'Equipo' },
-  { path: '/contacto', label: 'Contacta' },
+  { path: '/contacta', label: 'Contacta' },
 ]
 
 export default function Menu() {

@@ -28,10 +28,10 @@ export default function Commitment() {
         >
           <div className="flex h-full items-center justify-center px-4">
             <Parallax translateY={[5, 0]} shouldAlwaysCompleteAnimation>
-              <h3 className="text-white text-center font-sans text-[40px] lg:text-[90px] tracking-wider lg:w-2/3 mb-10 lg:mb-0">
+              <h3 className="text-white text-center font-sans text-[40px] lg:text-[90px] lg:w-2/3 mb-10 lg:mb-0 tracking-widest">
                 COMPROMISO
               </h3>
-              <p className="font-sans text-3xl text-white text-center lg:w-2/3 lg:text-left">
+              <p className="font-sans text-3xl text-white text-center lg:w-2/3 lg:text-left tracking-widest">
                 En cada proyecto, un compromiso sublime que supera expectativas,
                 del primer contacto a la entrega final.
               </p>

@@ -1,9 +1,37 @@
 import Image from 'next/image'
 import React from 'react'
+import { motion } from 'framer-motion'
 
 type Props = {
   text: string
   mode?: 'primary' | 'secondary'
+}
+
+const containerVariants = {
+  hover: {
+    scale: 1.2,
+    transition: {
+      duration: 0.5,
+    },
+  },
+}
+
+const textVariants = {
+  hover: {
+    scale: 0.8,
+    transition: {
+      duration: 0.5,
+    },
+  },
+}
+
+const imageVariants = {
+  hover: {
+    scale: 1.4,
+    transition: {
+      duration: 0.3,
+    },
+  },
 }
 
 const Button: React.FC<Props> = ({ text, mode = 'primary' }) => {
@@ -15,18 +43,24 @@ const Button: React.FC<Props> = ({ text, mode = 'primary' }) => {
     mode === 'primary' ? 'text-aeh_primary' : 'text-aeh_secondary'
 
   return (
-    <div
+    <motion.div
+      whileHover="hover"
+      variants={containerVariants}
       className={`flex flex-row w-fit items-center justify-between ${bgContainer} lg:py-4 lg:px-6 py-2 px-4 rounded-full space-x-6 cursor-pointer`}
     >
-      <p className={`${textButton} text-lg lg:text-2xl  font-sans`}>{text}</p>
-      <Image
+      <motion.p
+        variants={textVariants}
+        className={`${textButton} text-lg lg:text-2xl  font-sans tracking-widest`}
+      >
+        {text}
+      </motion.p>
+      <motion.img
+        variants={imageVariants}
         alt="AEH Group circle icon"
         src={`https://res.cloudinary.com/caskchain/image/upload/v1695129447/AEHGroup/${icon}`}
-        width={25}
-        height={25}
         className="object-contain lg:w-[25px] lg:h-[25px] w-[15px] h-[15px]"
       />
-    </div>
+    </motion.div>
   )
 }
 

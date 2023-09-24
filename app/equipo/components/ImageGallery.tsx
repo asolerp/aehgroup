@@ -8,9 +8,9 @@ export default function ImageGallery() {
       <Parallax
         translateX={['0px', '-300px']}
         shouldAlwaysCompleteAnimation
-        className="w-full overflow-x-hidden"
+        className="w-auto overflow-x-hidden"
       >
-        <div className="flex flex-row items-start space-x-10 mt-20 lg:mt-40 w-full -mr-[300px]">
+        <div className="flex flex-row items-start space-x-10 mt-20 lg:mt-40 w-auto lg:-mr-[300px]">
           <Image
             src={mapBgImages.bg_2}
             alt="AEH Group"
@@ -35,7 +35,7 @@ export default function ImageGallery() {
         </div>
       </Parallax>
       <Parallax translateX={['0px', '300px']} shouldAlwaysCompleteAnimation>
-        <div className="flex flex-row items-start space-x-10 mt-20 w-full -ml-40">
+        <div className="flex flex-row items-start space-x-10 mt-20 w-full lg:-ml-40">
           <Image
             src={mapBgImages.bg_1}
             alt="AEH Group"

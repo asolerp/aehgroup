@@ -11,7 +11,7 @@ import AboutUsSection from './components/AboutUsSection'
 import ProjectsSection from './components/ProjectsSection'
 import ServicesSection from './components/ServicesSection'
 
-import { ParallaxProvider } from 'react-scroll-parallax'
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 
 export default function Home() {
   const [letterAnimationFinished, setLetterAnimationFinished] = useState(false)
@@ -37,9 +37,9 @@ export default function Home() {
                     width={1400}
                     height={800}
                     initial={{ scale: 0 }}
-                    animate={{ scale: letterAnimationFinished ? 1 : 0 }}
+                    animate={{ scale: 1 }}
                     transition={{ duration: 1 }}
-                    className="lg:-mt-36 mt-10  object-contain"
+                    className="lg:-mt-36 mt-10  object-cover"
                   />
                 </div>
                 <AboutUsSection />

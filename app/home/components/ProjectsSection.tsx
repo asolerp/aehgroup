@@ -4,6 +4,7 @@ import Button from '@/app/components/Button'
 import Image from 'next/image'
 import { useRef } from 'react'
 import { Carousel } from 'react-responsive-carousel'
+import { motion } from 'framer-motion'
 
 export default function ProjectsSection() {
   const carouselRef = useRef<any>(null)
@@ -15,7 +16,6 @@ export default function ProjectsSection() {
   }
 
   const handlePrevClick = () => {
-    console.log('prev')
     if (carouselRef.current) {
       carouselRef.current.decrement()
     }
@@ -51,19 +51,17 @@ export default function ProjectsSection() {
             <Button text="Projectos" mode="secondary" />
           </div>
           <div className="flex flex-row space-x-5">
-            <Image
+            <motion.img
+              whileHover={{ scale: 1.1 }}
               alt="AEH Group left icon"
               src="https://res.cloudinary.com/caskchain/image/upload/v1695134267/AEHGroup/aeh_left_icon.png"
-              width={100}
-              height={100}
               onClick={handlePrevClick}
               className="cursor-pointer lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]"
             />
-            <Image
+            <motion.img
+              whileHover={{ scale: 1.1 }}
               alt="AEH Group right icon"
               src="https://res.cloudinary.com/caskchain/image/upload/v1695134267/AEHGroup/aeh_right_icon.png"
-              width={100}
-              height={100}
               onClick={handleNextClick}
               className="cursor-pointer lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]"
             />
