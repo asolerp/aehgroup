@@ -26,7 +26,9 @@ export default function NavBar() {
   }, 300)
 
   const backgroundColor =
-    pathName !== '/equipo' ? 'bg-white' : 'bg-aeh_secondary'
+    pathName !== '/equipo' && pathName !== '/servicios'
+      ? 'bg-white'
+      : 'bg-aeh_secondary'
 
   return (
     <>

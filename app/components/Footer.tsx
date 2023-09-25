@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -6,9 +7,11 @@ export default function Footer() {
       <div className="flex flex-col lg:grid lg:grid-cols-3 lg:gap-4 py-10 space-y-6">
         <div className="col-span-1 lg:px-10 flex flex-col justify-end">
           <p className="font-sans  text-aeh_tertiary mb-1">Contact Us</p>
-          <p className="font-sans text-3xl lg:text-4xl text-aeh_tertiary">
-            FORM
-          </p>
+          <Link href="/contacta">
+            <p className="font-sans text-3xl lg:text-4xl text-aeh_tertiary">
+              FORM
+            </p>
+          </Link>
         </div>
         <div className="col-span-1  flex flex-col justify-end">
           <p className="font-sans  text-aeh_tertiary mb-1">Call Us</p>

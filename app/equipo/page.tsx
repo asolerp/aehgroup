@@ -17,7 +17,7 @@ export default function AboutUs() {
     <ParallaxProvider>
       <main className="flex min-h-screen bg-aeh_secondary overflow-x-hidden">
         <div className="w-full mt-20">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center w-full">
             <h1 className="text-gray-600 text-center font-sans text-[30px] lg:text-[90px] tracking-widest w-3/4">
               DESCUBRA NUESTRO EQUIPO
             </h1>

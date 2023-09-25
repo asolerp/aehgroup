@@ -38,7 +38,7 @@ export default function Project({ orientation = 'left' }) {
           NOMBRE DEL PROYECTO
         </h3>
         <p
-          className={`font-sans font-light text-aeh_primary text-2xl tracking-widest ${orientationClassName} `}
+          className={`font-sans font-light text-aeh_primary text-lg lg:text-2xl tracking-widest ${orientationClassName} `}
         >
           Nuestra dedicación a la excelencia se refleja en cada proyecto que
           llevamos a cabo. Desde el primer contacto hasta la entrega final, nos
