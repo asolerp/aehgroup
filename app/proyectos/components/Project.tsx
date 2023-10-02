@@ -14,21 +14,21 @@ export default function Project({ orientation = 'left' }) {
   return (
     <div className="flex flex-col lg:grid lg:grid-cols-2">
       <div
-        className={`col-span-1 flex items-center justify-center ${orderFirstColumnClassName} lg:px-10`}
+        className={`col-span-1 flex items-center justify-center ${orderFirstColumnClassName}`}
       >
         <Image
           src={mapBgImages.bg_1}
           alt="AEH Group project 1"
           width={620}
           height={620}
-          className="object-cover w-full lg:h-[820px] h-[200px] mb-10"
+          className="object-cover w-full lg:h-[820px] h-[200px] mb-6 lg:mb-0"
         />
       </div>
       <div
-        className={`col-span-1 space-y-5 flex flex-col justify-center lg:px-10  ${orderSecondColumnClassName}`}
+        className={`col-span-1 space-y-3 lg:space-y-5 flex flex-col justify-center lg:px-10  ${orderSecondColumnClassName}`}
       >
         <h2
-          className={`font-sans text-4xl text-gray-600 tracking-widest ${orientationClassName}`}
+          className={`font-sans text-2xl  lg:text-4xl text-gray-600 tracking-widest ${orientationClassName}`}
         >
           AÑO
         </h2>

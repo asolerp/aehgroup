@@ -26,13 +26,13 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-4 py-10">
+      <div className="flex flex-col py-10">
         <div className="col-span-1 flex lg:flex-row justify-between items-center">
-          <p className="font-sans text-[40px] lg:text-[80px] tracking-widest text-aeh_tertiary">
+          <p className="font-sans text-[40px] lg:text-[50px] tracking-widest text-aeh_tertiary">
             FOLLOW US
           </p>
         </div>
-        <div className="col-span-1 flex lg:justify-end items-center">
+        <div className="col-span-1 flex items-center">
           <div className="p-4 lg:p-8 bg-white rounded-full mt-2">
             <Image
               src="https://res.cloudinary.com/caskchain/image/upload/v1695040186/AEHGroup/aeh_instagram.png"

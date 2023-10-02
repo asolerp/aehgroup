@@ -15,7 +15,7 @@ const Service: React.FC<ServiceProps> = ({ text, image }) => {
         translateX={['100px', '0px']}
         shouldAlwaysCompleteAnimation
       >
-        <h3 className="text-gray-600 font-sans text-center text-5xl lg:text-7xl tracking-widest font-light">
+        <h3 className="text-gray-600 font-sans text-center text-5xl lg:text-6xl tracking-widest font-light">
           {text}
         </h3>
       </Parallax>

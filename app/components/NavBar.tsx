@@ -15,7 +15,7 @@ const variants: Variants = {
 }
 
 const LOGO_ROUTE =
-  'https://res.cloudinary.com/caskchain/image/upload/v1695036478/AEHGroup/aeh_logo.png'
+  'https://res.cloudinary.com/caskchain/image/upload/v1696229637/AEHGroup/AEHGROUP_LOGO.jpg'
 
 export default function NavBar() {
   const { setMenuOpen, menuOpen } = useMenuContext()
@@ -25,15 +25,12 @@ export default function NavBar() {
     setMenuOpen(state)
   }, 300)
 
-  const backgroundColor =
-    pathName !== '/equipo' && pathName !== '/servicios'
-      ? 'bg-white'
-      : 'bg-aeh_secondary'
+  const backgroundColor = 'bg-white'
 
   return (
     <>
       <ParallaxProvider>
-        <div className={`pt-10 lg:p-10 w-full ${backgroundColor}`}>
+        <div className={`pt-10 lg:px-10 w-full ${backgroundColor}`}>
           <motion.div
             initial="hidden"
             animate="visible"
@@ -42,17 +39,20 @@ export default function NavBar() {
           >
             <Parallax
               translateY={[0, 50]}
+              easing="easeOutQuad"
               opacity={[1, 0.3]}
               shouldAlwaysCompleteAnimation={true}
               className="flex flex-row justify-center lg:justify-between items-center w-full"
             >
-              <Image
-                src={LOGO_ROUTE}
-                alt="AEH Group"
-                width={100}
-                height={100}
-                className="w-[80px] h-[55px] lg:w-[90px] lg:h-[60px]"
-              />
+              <Link href="/home">
+                <Image
+                  src={LOGO_ROUTE}
+                  alt="AEH Group"
+                  width={100}
+                  height={100}
+                  className="w-[80px] h-[55px] lg:w-[130px] lg:h-[90px]"
+                />
+              </Link>
               <div className="lg:flex lg:flex-row flex-grow justify-center space-x-20 hidden">
                 <Link href="/home">
                   <p className="font-sans text-2xl font-light">Home</p>

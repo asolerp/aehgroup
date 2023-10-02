@@ -1,17 +1,17 @@
-import FadeInElement from '@/app/home/components/FadeInElement'
+import FadeInAnimation from '@/app/components/Animations/FadeInAnimation'
 import Value from './Value'
 import { motion } from 'framer-motion'
 export default function Values() {
   return (
     <>
-      <div className="py-20 w-full flex justify-center">
-        <FadeInElement>
+      <FadeInAnimation>
+        <div className="py-20 w-full flex justify-center">
           <h2 className="text-gray-600 font-sans text-[32px] lg:text-[70px] tracking-widest text-center lg:w-2/3 px-10 lg:px-0">
             SOMOS QUIENES SOMOS POR NUESTROS VALORES
           </h2>
-        </FadeInElement>
-      </div>
-      <div className="relative bg-aeh_primary py-20 lg:p-20 w-full ">
+        </div>
+      </FadeInAnimation>
+      <div className="relative bg-aeh_primary py-20 lg:px-20 w-full ">
         <div className="flex flex-row lg:block overflow-x-auto w-full space-x-20">
           <div className="lg:grid lg:grid-cols-5 lg:mb-20 w-screen lg:w-auto">
             <div className="lg:col-span-3 w-screen p-5 lg:p-0 lg:w-auto">

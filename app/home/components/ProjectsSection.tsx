@@ -22,7 +22,7 @@ export default function ProjectsSection() {
   }
 
   return (
-    <div className="mt-20">
+    <div>
       <div className="relative">
         <Carousel
           ref={carouselRef}

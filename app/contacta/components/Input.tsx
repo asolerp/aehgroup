@@ -13,19 +13,19 @@ const Input: React.FC<Props> = ({ label, placeholder, type, onChange }) => {
 
   return (
     <div className="w-full">
-      <p className="font-sans text-aeh_primary text-2xl lg:text-4xl mb-4">
+      <p className="font-sans text-aeh_primary text-2xl lg:text-3xl mb-4">
         {label}
       </p>
       {type === 'message' ? (
         <textarea
           placeholder={placeholder}
           onChange={(e) => onChange(e.target.value)}
-          className={`font-sans text-[20px] lg:text-[60px] outline-none text-aeh_primary placeholder-aeh_primary w-full tracking-widest align-top ${height}`}
+          className={`font-sans text-[20px] lg:text-[50px] outline-none text-aeh_primary placeholder-aeh_primary w-full tracking-widest align-top ${height}`}
         ></textarea>
       ) : (
         <input
           type={type}
-          className={`font-sans text-[20px] lg:text-[60px] outline-none text-aeh_primary placeholder-aeh_primary w-full tracking-widest align-top ${height}`}
+          className={`font-sans text-[20px] lg:text-[50px] outline-none text-aeh_primary placeholder-aeh_primary w-full tracking-widest align-top ${height}`}
           placeholder={placeholder}
           onChange={(e) => onChange(e.target.value)}
         />

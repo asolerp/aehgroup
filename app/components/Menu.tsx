@@ -95,7 +95,7 @@ export default function Menu() {
                 >
                   <p
                     onClick={() => handleRouteChange(item.path)}
-                    className="font-sans text-[40px] lg:text-[80px] font-light tracking-widest cursor-pointer"
+                    className="font-sans text-[40px] lg:text-[70px] font-light tracking-widest cursor-pointer text-gray-600"
                   >
                     {item.label}
                   </p>
@@ -109,9 +109,9 @@ export default function Menu() {
               alt="AEH Group Instagram"
               width={50}
               height={50}
-              className="object-contain lg:w-[50px] lg:h-[50px] w-[35px] h-[35px]"
+              className="object-contain lg:w-[40px] lg:h-[40px] w-[35px] h-[35px]"
             />
-            <p className="font-sans text-[30px] lg:text-[40px] text-aeh_primary">
+            <p className="font-sans text-[30px] lg:text-[30px] text-aeh_primary">
               ES | EN | DE
             </p>
           </div>

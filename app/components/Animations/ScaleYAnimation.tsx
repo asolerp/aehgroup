@@ -7,7 +7,7 @@ type Props = {
   children: React.ReactNode
 }
 
-const FadeInElement: React.FC<Props> = ({ children }) => {
+const ScaleYAnimation: React.FC<Props> = ({ children }) => {
   const [ref, inView] = useInView({
     triggerOnce: true, // This ensures the animation only triggers once when the element enters the viewport.
     threshold: 0.2, // Adjust this threshold as needed for when you want the animation to start.
@@ -31,4 +31,4 @@ const FadeInElement: React.FC<Props> = ({ children }) => {
   )
 }
 
-export default FadeInElement
+export default ScaleYAnimation
