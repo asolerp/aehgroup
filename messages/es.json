@@ -1,0 +1,92 @@
+{
+  "LocaleLayout": {
+    "title": "AEH Group"
+  },
+  "Footer": {
+    "contact": "Contáctanos",
+    "callUs": "Llámanos",
+    "writeUs": "Escríbenos",
+    "followUs": "Síguenos",
+    "form": "Formulario"
+  },
+  "Menu": {
+    "home": "Inicio",
+    "about": "Sobre nosotros",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "HomePage": {
+    "buttons": {
+      "about": "Sobre nosotros",
+      "contact": "Contacto",
+      "services": "Servicios",
+      "projects": "Proyectos"
+    },
+    "title": "CONSTRUIMOS TU ESTILO DE VIDA",
+    "about": {
+      "title": "Te ayudamos a crear y construir tu espacio perfecto.",
+      "subtitle": "Desde el primer contacto hasta la entrega final, nos comprometemos a realizar cada proyecto de una manera excepcional para superar tus expectativas. Fusionando construcción, diseño y profesionalidad queremos ofrecerte nuestros mejores servicios en todo tipo de reformas, rehabilitaciones y obras."
+    },
+    "services": {
+      "header": "CALIDAD DESDE EL MÍNIMO DETALLE",
+      "title": "Tu satisfacción es nuestro principal objetivo.",
+      "subtitle": "Trabajamos desde la transparencia para generar relaciones con nuestros clientes basadas en la confianza. Queremos ayudarte en todo el proceso a seguir para lograr tu espacio soñado, para ello con con un equipo formado por personal cualificado."
+    }
+  },
+  "ProjectsPage": {
+    "title": "DESCUBRE NUESTROS PROYECTOS"
+  },
+  "ServicesPage": {
+    "title": "NUESTROS SERVICIOS",
+    "subtitle": "En cada proyecto, desde la búsqueda inicial de ideas y hasta el resultado final, te ayudamos a crear y construir tu espacio perfecto en todo tipo de reformas, rehabilitaciones y obras.",
+    "banner": {
+      "title": "REFORMAS INTEGRALES",
+      "button": "Ver más"
+    },
+    "service_1": "REFORMAS INTEGRALES",
+    "service_2": "FACHADAS",
+    "service_3": "EXTERIORES",
+    "service_4": "BAÑOS"
+  },
+  "AboutPage": {
+    "title": "DESCUBRE NUESTRO EQUIPO",
+    "subtitle_1": "Nos comprometemos a cuidar hasta el más mínimo detalle duranto toda la ejecución de una obra, acompañándote en todo el camino para cumplir tus sueños.",
+    "subtitle_2": "Para ello, contamos con un equipo formado por personal altamente cualificado con ganas de mejorar en cada paso que dan.",
+    "commitment": {
+      "title": "CALIDAD",
+      "subtitle": "Basándonos en la confianza, profesionalidad y transparencia; y fusionando arquitectura, construcción y diseño, trabajamos para superar tus expectativas."
+    },
+    "values": {
+      "title": "SOMOS QUIENES SOMOS POR NUESTROS VALORES",
+      "value_1": {
+        "title": "Arquitectura, construcción y diseño:",
+        "subtitle": "Nos une nuestro amor por la arquitectura, la construcción y el diseño. Te ayudamos a fusionar estos conceptos con ayuda de nuestro equipo técnico, buscando la mejor manera de aprovechar el espacio de una manera práctica y funcional, adaptándonos a cada tipo de cliente para enlazar calidad y diseño."
+      },
+      "value_2": {
+        "title": "Compromiso y profesionalidad:",
+        "subtitle": "Nos comprometemos contigo a realizar todo el proceso de ejecución de una manera profesional, para alcanzar y cumplir los estándares de calidad que tu proyecto se merece. Contamos con el personal adecuado que te puede acompañar durante todo el camino."
+      },
+      "value_3": {
+        "title": "Confianza y transparencia:",
+        "subtitle": "La confianza es la base de cualquier relación. Estás dejando en nuestras manos la realización de ese espacio que quieres crear o mejorar. Lo trataremos como si fuera nuestro, dando la misma importancia al proceso como al resultado final."
+      },
+      "value_4": {
+        "title": "Equipo:",
+        "subtitle": "Nuestro objetivo es facilitar la ejecución de las obras, organizando, coordinando y supervisando todo el proceso. Trabajamos conjuntamente para minimizar al máximo los problemas que puedan surgir, o por contra, para buscar ágilmente soluciones. Contamos con un equipo con experiencia en el sector de la construcción, en el cual confiamos para conseguir los resultados esperados."
+      }
+    }
+  },
+  "ContactPage": {
+    "title": "¡CONTÁCTANOS!",
+    "subtitle": "¿Quieres hacer/reformar tu casa y no sabes por donde empezar?",
+    "form": {
+      "email": "Email",
+      "placeholder_email": "PRUEBA@PRUEBA.COM",
+      "message": "Mensaje",
+      "placeholder_message": "CUÉNTANOS TU PROYECTO...",
+      "conditions": "He leído y acepto la política de privacidad",
+      "send": "Enviar"
+    }
+  }
+}

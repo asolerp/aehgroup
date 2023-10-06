@@ -8,6 +8,7 @@ import { useMenuContext } from '../context/MenuContext'
 import debounce from 'lodash.debounce'
 import { usePathname } from 'next/navigation'
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
+import { useTranslations } from 'next-intl'
 
 const variants: Variants = {
   hidden: { opacity: 0, y: -50 },
@@ -19,7 +20,7 @@ const LOGO_ROUTE =
 
 export default function NavBar() {
   const { setMenuOpen, menuOpen } = useMenuContext()
-  const pathName = usePathname()
+  const t = useTranslations('Menu')
 
   const handleMenuToggle = debounce((state) => {
     setMenuOpen(state)
@@ -55,19 +56,25 @@ export default function NavBar() {
               </Link>
               <div className="lg:flex lg:flex-row flex-grow justify-center space-x-20 hidden">
                 <Link href="/home">
-                  <p className="font-sans text-2xl font-light">Home</p>
+                  <p className="font-sans text-2xl font-light">{t('home')}</p>
                 </Link>
                 <Link href="/proyectos">
-                  <p className="font-sans text-2xl font-light">Proyectos</p>
+                  <p className="font-sans text-2xl font-light">
+                    {t('projects')}
+                  </p>
                 </Link>
                 <Link href="/servicios">
-                  <p className="font-sans text-2xl font-light">Servicios</p>
+                  <p className="font-sans text-2xl font-light">
+                    {t('services')}
+                  </p>
                 </Link>
                 <Link href="/equipo">
-                  <p className="font-sans text-2xl font-light">Equipo</p>
+                  <p className="font-sans text-2xl font-light">{t('about')}</p>
                 </Link>
                 <Link href="/contacta">
-                  <p className="font-sans text-2xl font-light">Contacta</p>
+                  <p className="font-sans text-2xl font-light">
+                    {t('contact')}
+                  </p>
                 </Link>
               </div>
               <div className="hidden lg:block lg:w-[100px]"></div>

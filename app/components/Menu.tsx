@@ -2,14 +2,14 @@
 
 import { motion, Variants } from 'framer-motion'
 import { useMenuContext } from '../context/MenuContext'
-import { useEffect, useState } from 'react'
+import { ChangeEvent, useEffect, useState, useTransition } from 'react'
 
 import Image from 'next/image'
 import UnderlineAnimation from './UnderlineAnimation'
 import useMenuHandler from '../hooks/useMenuHandler'
 import ImageTransition from './ImageTransition'
-import Link from 'next/link'
-import { useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next-intl/client'
+import { useTranslations } from 'next-intl'
 
 const listVariants: Variants = {
   hidden: { opacity: 0, x: -50 },
@@ -28,19 +28,22 @@ const itemVariants: Variants = {
   visible: { opacity: 1, x: 0 },
 }
 
-const menuItems = [
-  { path: '/home', label: 'Home' },
-  { path: '/proyectos', label: 'Proyectos' },
-  { path: '/servicios', label: 'Servicios' },
-  { path: '/equipo', label: 'Equipo' },
-  { path: '/contacta', label: 'Contacta' },
-]
-
 export default function Menu() {
   const [finished, setFinished] = useState(false)
   const { menuOpen, setMenuOpen } = useMenuContext()
+  const [startTransition] = useTransition()
   const { getIsMenuActive, imageSrc, handleImageChange } = useMenuHandler()
   const router = useRouter()
+  const pathname = usePathname()
+  const t = useTranslations('Menu')
+
+  const menuItems = [
+    { path: '/home', label: t('home') },
+    { path: '/proyectos', label: t('projects') },
+    { path: '/servicios', label: t('services') },
+    { path: '/equipo', label: t('about') },
+    { path: '/contacta', label: t('contact') },
+  ]
 
   const handleOnAnimationComplete = () => {
     if (!menuOpen) {
@@ -51,6 +54,11 @@ export default function Menu() {
   const handleRouteChange = (path: string) => {
     setMenuOpen(false)
     router.push(path)
+  }
+
+  function handleLanguageChange(locale: string) {
+    console.log(locale)
+    router.replace(pathname, { locale })
   }
 
   useEffect(() => {
@@ -111,9 +119,17 @@ export default function Menu() {
               height={50}
               className="object-contain lg:w-[40px] lg:h-[40px] w-[35px] h-[35px]"
             />
-            <p className="font-sans text-[30px] lg:text-[30px] text-aeh_primary">
-              ES | EN | DE
-            </p>
+            <div className="flex flex-row space-x-4">
+              {['es', 'en', 'de'].map((lang) => (
+                <p
+                  onClick={() => handleLanguageChange(lang)}
+                  key={lang}
+                  className="cursor-pointer font-sans text-[30px] lg:text-[30px] text-aeh_primary"
+                >
+                  {lang.toUpperCase()}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
         <div className="hidden lg:flex lg:flex-col lg:flex-grow h-full col-span-1 bg-white">

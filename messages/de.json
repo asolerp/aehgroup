@@ -1,0 +1,92 @@
+{
+  "LocaleLayout": {
+    "title": "AEH Group"
+  },
+  "Footer": {
+    "contact": "Kontaktiere uns",
+    "callUs": "Ruf uns an",
+    "writeUs": "Schreib uns",
+    "followUs": "Folge uns",
+    "form": "Formular"
+  },
+  "Menu": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "HomePage": {
+    "buttons": {
+      "about": "Über uns",
+      "contact": "Kontakt",
+      "services": "Dienstleistungen",
+      "projects": "Projekte"
+    },
+    "title": "WIR BAUEN IHREN LEBENSSTIL",
+    "about": {
+      "title": "Wir helfen Ihnen, Ihren perfekten Raum zu erstellen und zu bauen.",
+      "subtitle": "Vom ersten Kontakt bis zur endgültigen Lieferung sind wir bestrebt, jedes Projekt auf außergewöhnliche Weise durchzuführen, um Ihre Erwartungen zu übertreffen. Durch die Verbindung von Bau, Design und Professionalität möchten wir Ihnen unsere besten Dienstleistungen bei allen Arten von Renovierungen, Sanierungen und Arbeiten anbieten."
+    },
+    "services": {
+      "header": "QUALITÄT BIS INS KLEINSTE DETAIL",
+      "title": "Ihre Zufriedenheit ist unser Hauptziel.",
+      "subtitle": "Wir arbeiten transparent, um Beziehungen zu unseren Kunden auf der Basis von Vertrauen aufzubauen. Wir möchten Ihnen helfen, Ihren Traumraum zu erreichen, und haben dafür ein Team aus qualifizierten Mitarbeitern."
+    }
+  },
+  "ProjectsPage": {
+    "title": "ENTDECKEN SIE UNSERE PROJEKTE"
+  },
+  "ServicesPage": {
+    "title": "UNSERE DIENSTLEISTUNGEN",
+    "subtitle": "Bei jedem Projekt, von der ersten Ideensuche bis zum endgültigen Ergebnis, helfen wir Ihnen, Ihren perfekten Raum bei allen Arten von Renovierungen, Sanierungen und Arbeiten zu erstellen und zu bauen.",
+    "banner": {
+      "title": "UMFASSENDE REFORMEN",
+      "button": "Mehr sehen"
+    },
+    "service_1": "UMFASSENDE REFORMEN",
+    "service_2": "FASSADEN",
+    "service_3": "AUSSENFELDER",
+    "service_4": "BADEZIMMER"
+  },
+  "AboutPage": {
+    "title": "ENTDECKEN SIE UNSER TEAM",
+    "subtitle_1": "Wir setzen uns dafür ein, jedes Detail während der Durchführung einer Arbeit zu beachten und Sie dabei zu begleiten, Ihre Träume zu erfüllen.",
+    "subtitle_2": "Dafür haben wir ein Team aus hochqualifizierten Mitarbeitern, die stets bestrebt sind, sich weiterzuentwickeln.",
+    "commitment": {
+      "title": "QUALITÄT",
+      "subtitle": "Auf der Grundlage von Vertrauen, Professionalität und Transparenz und durch die Verbindung von Architektur, Bau und Design arbeiten wir daran, Ihre Erwartungen zu übertreffen."
+    },
+    "values": {
+      "title": "WIR SIND WER WIR SIND WEGEN UNSEREN WERTEN",
+      "value_1": {
+        "title": "Architektur, Bau und Design:",
+        "subtitle": "Uns verbindet die Liebe zur Architektur, zum Bauen und zum Design. Mit Hilfe unseres technischen Teams helfen wir Ihnen, diese Konzepte zu verbinden und den Raum auf praktische und funktionale Weise optimal zu nutzen, indem wir uns an jeden Kundentyp anpassen und Qualität und Design verbinden."
+      },
+      "value_2": {
+        "title": "Engagement und Professionalität:",
+        "subtitle": "Wir verpflichten uns, den gesamten Ausführungsprozess professionell durchzuführen, um die Qualitätsstandards zu erreichen und zu erfüllen, die Ihr Projekt verdient. Wir haben das richtige Personal, das Sie auf dem ganzen Weg begleiten kann."
+      },
+      "value_3": {
+        "title": "Vertrauen und Transparenz:",
+        "subtitle": "Vertrauen ist die Grundlage jeder Beziehung. Sie überlassen uns die Realisierung des Raumes, den Sie schaffen oder verbessern möchten. Wir werden ihn behandeln, als wäre er unser eigener, und dem Prozess genauso viel Bedeutung beimessen wie dem endgültigen Ergebnis."
+      },
+      "value_4": {
+        "title": "Team:",
+        "subtitle": "Unser Ziel ist es, die Durchführung der Arbeiten zu erleichtern, indem wir den gesamten Prozess organisieren, koordinieren und überwachen. Wir arbeiten gemeinsam daran, Probleme so weit wie möglich zu minimieren, oder im Gegenteil, schnell Lösungen zu finden. Wir haben ein Team mit Erfahrung in der Baubranche, dem wir vertrauen, um die erwarteten Ergebnisse zu erzielen."
+      }
+    }
+  },
+  "ContactPage": {
+    "title": "KONTAKTIEREN SIE UNS!",
+    "subtitle": "Möchten Sie Ihr Haus bauen/renovieren und wissen nicht, wo Sie anfangen sollen?",
+    "form": {
+      "email": "E-Mail",
+      "placeholder_email": "TEST@TEST.COM",
+      "message": "Nachricht",
+      "placeholder_message": "ERZÄHLEN SIE UNS VON IHREM PROJEKT...",
+      "conditions": "Ich habe die Datenschutzerklärung gelesen und akzeptiere sie",
+      "send": "Senden"
+    }
+  }
+}

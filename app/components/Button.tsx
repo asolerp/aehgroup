@@ -1,40 +1,22 @@
-import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
 
 type Props = {
   text: string
+  disabled?: boolean
   mode?: 'primary' | 'secondary'
-}
-
-const containerVariants = {
-  hover: {
-    scale: 1.2,
-    transition: {
-      duration: 0.5,
-    },
-  },
-}
-
-const textVariants = {
-  hover: {
-    scale: 0.8,
-    transition: {
-      duration: 0.5,
-    },
-  },
 }
 
 const imageVariants = {
   hover: {
-    scale: 1.4,
+    scale: 1.6,
     transition: {
       duration: 0.3,
     },
   },
 }
 
-const Button: React.FC<Props> = ({ text, mode = 'primary' }) => {
+const Button: React.FC<Props> = ({ text, mode = 'primary', disabled }) => {
   const icon =
     mode === 'primary' ? 'aeh_circle_icon.png' : 'aeh_circle_icon_secondary.png'
   const bgContainer =
@@ -45,15 +27,15 @@ const Button: React.FC<Props> = ({ text, mode = 'primary' }) => {
   return (
     <motion.div
       whileHover="hover"
-      variants={containerVariants}
-      className={`flex flex-row w-fit items-center justify-between ${bgContainer} lg:py-4 lg:px-6 py-2 px-4 rounded-full space-x-6 cursor-pointer`}
+      className={`flex flex-row w-fit items-center justify-between ${bgContainer} ${
+        disabled ? 'opacity-60' : ''
+      } lg:py-4 lg:px-6 py-2 px-4 rounded-full space-x-6 cursor-pointer shadow-lg`}
     >
-      <motion.p
-        variants={textVariants}
+      <p
         className={`${textButton} text-lg lg:text-2xl  font-sans tracking-widest`}
       >
         {text}
-      </motion.p>
+      </p>
       <motion.img
         variants={imageVariants}
         alt="AEH Group circle icon"

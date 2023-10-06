@@ -1,0 +1,92 @@
+{
+  "LocaleLayout": {
+    "title": "AEH Group"
+  },
+  "Footer": {
+    "contact": "Contact Us",
+    "callUs": "Call Us",
+    "writeUs": "Write to Us",
+    "followUs": "Follow Us",
+    "form": "Form"
+  },
+  "Menu": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "HomePage": {
+    "buttons": {
+      "about": "About Us",
+      "contact": "Contact",
+      "services": "Services",
+      "projects": "Projects"
+    },
+    "title": "WE BUILD YOUR LIFESTYLE",
+    "about": {
+      "title": "We help you create and build your perfect space.",
+      "subtitle": "From first contact to final delivery, we are committed to carrying out each project in an exceptional way to exceed your expectations. Merging construction, design and professionalism we want to offer you our best services in all types of renovations, rehabilitations and works."
+    },
+    "services": {
+      "header": "QUALITY FROM THE MINIMUM DETAIL",
+      "title": "Your satisfaction is our main goal.",
+      "subtitle": "We work from transparency to generate relationships with our clients based on trust. We want to help you throughout the process to achieve your dream space, for this we have a team made up of qualified personnel."
+    }
+  },
+  "ProjectsPage": {
+    "title": "DISCOVER OUR PROJECTS"
+  },
+  "ServicesPage": {
+    "title": "OUR SERVICES",
+    "subtitle": "In each project, from the initial search for ideas to the final result, we help you create and build your perfect space in all types of renovations, rehabilitations and works.",
+    "banner": {
+      "title": "COMPREHENSIVE REFORMS",
+      "button": "See more"
+    },
+    "service_1": "COMPREHENSIVE REFORMS",
+    "service_2": "FACADES",
+    "service_3": "EXTERIORS",
+    "service_4": "BATHROOMS"
+  },
+  "AboutPage": {
+    "title": "DISCOVER OUR TEAM",
+    "subtitle_1": "We are committed to taking care of every detail during the execution of a work, accompanying you all the way to fulfill your dreams.",
+    "subtitle_2": "For this, we have a team made up of highly qualified personnel eager to improve at every step they take.",
+    "commitment": {
+      "title": "QUALITY",
+      "subtitle": "Based on trust, professionalism and transparency; and merging architecture, construction and design, we work to exceed your expectations."
+    },
+    "values": {
+      "title": "WE ARE WHO WE ARE FOR OUR VALUES",
+      "value_1": {
+        "title": "Architecture, construction and design:",
+        "subtitle": "Our love for architecture, construction and design unites us. We help you merge these concepts with the help of our technical team, looking for the best way to take advantage of space in a practical and functional way, adapting to each type of client to link quality and design."
+      },
+      "value_2": {
+        "title": "Commitment and professionalism:",
+        "subtitle": "We commit ourselves to carry out the entire execution process in a professional manner, to reach and meet the quality standards that your project deserves. We have the right staff who can accompany you throughout the journey."
+      },
+      "value_3": {
+        "title": "Trust and transparency:",
+        "subtitle": "Trust is the basis of any relationship. You are leaving in our hands the realization of that space that you want to create or improve. We will treat it as if it were ours, giving the same importance to the process as to the final result."
+      },
+      "value_4": {
+        "title": "Team:",
+        "subtitle": "Our goal is to facilitate the execution of the works, organizing, coordinating and supervising the entire process. We work together to minimize as much as possible the problems that may arise, or on the contrary, to swiftly find solutions. We have a team with experience in the construction sector, which we trust to achieve the expected results."
+      }
+    }
+  },
+  "ContactPage": {
+    "title": "CONTACT US!",
+    "subtitle": "Do you want to make/renovate your house and don't know where to start?",
+    "form": {
+      "email": "Email",
+      "placeholder_email": "TEST@TEST.COM",
+      "message": "Message",
+      "placeholder_message": "TELL US ABOUT YOUR PROJECT...",
+      "conditions": "I have read and accept the privacy policy",
+      "send": "Send"
+    }
+  }
+}
