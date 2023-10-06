@@ -10,6 +10,7 @@ import { mapBgImages } from '../../utils/constants'
 import LayoutWithMainTitleAnimation from '../../components/LayoutWithMainTitleAnimation'
 import Spacer from '../../components/Spacer'
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 
 export default function Projects() {
   const t = useTranslations('ServicesPage')
@@ -35,7 +36,9 @@ export default function Projects() {
               <h1 className="lg:text-6xl text-4xl text-white font-sans tracking-widest font-light flex flex-wrap text-center">
                 {t('banner.title')}
               </h1>
-              <Button text={t('banner.button')} />
+              <Link href="/proyectos">
+                <Button text={t('banner.button')} />
+              </Link>
             </div>
           </ParallaxBanner>
         </div>

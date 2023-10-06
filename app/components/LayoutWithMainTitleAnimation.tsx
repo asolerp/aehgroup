@@ -33,12 +33,12 @@ const LayoutWithMainTitleAnimation: React.FC<Props> = ({
     <ParallaxProvider>
       <main className="flex min-h-screen bg-white">
         <div className="w-full flex flex-col items-center justify-center">
-          <div className="lg:w-[80%] w-[95%] z-10">
+          <div className="lg:w-[60%] w-[95%] z-10">
             <div className="flex flex-row justify-center flex-wrap space-x-4 lg:space-x-10">
               {words.map((word, index) => (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0 }}
+                  initial={{ opacity: 0.1 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1, delay: index * 0.1 }}
                   onAnimationComplete={handleAnimationComplete}
@@ -47,10 +47,10 @@ const LayoutWithMainTitleAnimation: React.FC<Props> = ({
                     {word.split('').map((letter, index) => (
                       <motion.span
                         key={index}
-                        initial={{ opacity: 0 }}
+                        initial={{ opacity: 0.1 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: index * 0.1 }}
-                        className="text-gray-600 font-sans text-[35px] lg:text-[70px] tracking-widest"
+                        className="text-gray-600 font-sans text-[35px] lg:text-[80px] tracking-widest"
                       >
                         {letter}
                       </motion.span>

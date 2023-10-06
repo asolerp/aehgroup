@@ -12,7 +12,7 @@ export default function AboutUsSection() {
       <div className="w-full">
         <div>
           <FadeInAnimation>
-            <h3 className="font-sans text-3xl lg:text-[50px] text-gray-600 tracking-widest font-normal lg:w-3/5 lg:leading-tight">
+            <h3 className="font-sans text-3xl lg:text-[60px] text-gray-600 tracking-widest font-normal lg:w-3/5 lg:leading-tight">
               {t('about.title')}
             </h3>
           </FadeInAnimation>
@@ -29,7 +29,7 @@ export default function AboutUsSection() {
         </div>
         <div className="col-span-1 mb-10 lg:mb-0 pl-14 lg:pl-0">
           <FadeInAnimation>
-            <h4 className="text-xl lg:text-3xl font-thin font-sans text-gray-600 leading-normal tracking-widest">
+            <h4 className="text-xl lg:text-2xl font-thin font-sans text-gray-600 leading-normal tracking-widest">
               {t('about.subtitle')}
             </h4>
           </FadeInAnimation>

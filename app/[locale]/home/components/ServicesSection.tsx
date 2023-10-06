@@ -80,7 +80,7 @@ export default function ServicesSection() {
         <div className="w-full mt-20">
           <FadeInAnimation>
             <div className="flex flex-row justify-end">
-              <h3 className="font-sans text-3xl lg:text-[50px] text-gray-600 tracking-widest font-normal lg:w-3/5 lg:leading-tight self-end">
+              <h3 className="font-sans text-3xl lg:text-[60px] text-gray-600 tracking-widest font-normal lg:w-3/5 lg:leading-tight self-end">
                 {t('services.title')}
               </h3>
             </div>
@@ -90,7 +90,7 @@ export default function ServicesSection() {
         <div className="flex flex-col lg:grid lg:grid-cols-2 ">
           <div className="col-span-1 mb-10 lg:mb-0 pl-14 lg:pl-0">
             <FadeInAnimation>
-              <h4 className="text-xl lg:text-3xl font-thin font-sans text-gray-600 leading-normal tracking-widest">
+              <h4 className="text-xl lg:text-2xl font-thin font-sans text-gray-600 leading-normal tracking-widest">
                 {t('services.subtitle')}
               </h4>
             </FadeInAnimation>
