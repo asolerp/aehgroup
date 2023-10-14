@@ -3,7 +3,7 @@ import Spacer from '@/app/components/Spacer'
 
 export default function Privacy() {
   return (
-    <LayoutWithMainTitleAnimation inputString="Política de Privacidad">
+    <LayoutWithMainTitleAnimation title="Política de Privacidad">
       <Spacer className="mb-10 lg:mb-20" />
       <div className="flex flex-col items-center">
         <div className="w-2/3 space-y-3">
