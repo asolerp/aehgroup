@@ -4,7 +4,7 @@ function useIsLargeScreen() {
   const [isLargeScreen, setIsLargeScreen] = useState(false)
 
   useEffect(() => {
-    setIsLargeScreen(window.matchMedia('(min-width: 768px)').matches)
+    setIsLargeScreen(window.matchMedia('(min-width: 769px)').matches)
 
     // I write this into a function for better visibility
     const handleResize = (e: any) => {

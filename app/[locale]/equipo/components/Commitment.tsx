@@ -43,10 +43,10 @@ export default function Commitment() {
       </div>
       <div className="col-span-1 h-screen bg-aeh_primary lg:flex lg:flex-col justify-center items-start space-y-10 px-20 hidden">
         <Parallax translateX={[5, 0]} shouldAlwaysCompleteAnimation>
-          <h3 className="text-white text-center font-sans text-[40px] lg:text-[90px] tracking-widest w-2/3">
+          <h3 className="text-white text-center lg:text-left font-sans text-[40px] lg:text-[90px] tracking-widest w-2/3 lg:w-full">
             {t('title')}
           </h3>
-          <p className="font-sans text-3xl text-white font-light tracking-widest">
+          <p className="font-sans text-3xl lg:text-[30px] text-white font-light tracking-widest">
             {t('subtitle')}
           </p>
         </Parallax>

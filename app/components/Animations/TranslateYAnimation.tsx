@@ -5,9 +5,17 @@ import useIsLargeScreen from '@/app/hooks/useIsLargeScreen'
 
 type Props = {
   children: React.ReactNode
+  withDelay?: boolean
+  largeY?: number
+  smallY?: number
 }
 
-const TranslateYAnimation: React.FC<Props> = ({ children }) => {
+const TranslateYAnimation: React.FC<Props> = ({
+  children,
+  withDelay = false,
+  largeY = 20,
+  smallY = 10,
+}) => {
   const { isLargeScreen } = useIsLargeScreen()
 
   const [ref, inView] = useInView({
@@ -16,8 +24,8 @@ const TranslateYAnimation: React.FC<Props> = ({ children }) => {
   })
 
   const translateYAnimation = {
-    hidden: { y: isLargeScreen ? 40 : 20, transition: { duration: 1 } },
-    visible: { y: 0, transition: { duration: 1 } },
+    hidden: { y: isLargeScreen ? largeY : smallY, transition: { duration: 1 } },
+    visible: { y: 0, transition: { duration: 1, delay: withDelay ? 1 : 0 } },
   }
 
   return (

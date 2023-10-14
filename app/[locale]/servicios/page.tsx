@@ -16,11 +16,8 @@ export default function Projects() {
   const t = useTranslations('ServicesPage')
 
   return (
-    <LayoutWithMainTitleAnimation inputString={t('title')}>
+    <LayoutWithMainTitleAnimation title={t('title')} subtitle={t('subtitle')}>
       <div className="flex flex-col items-center w-full ">
-        <h2 className="font-sans text-md lg:text-xl tracking-widest text-aeh_primary text-center lg:w-1/3 w-4/5 py-10 lg:py-20">
-          {t('subtitle')}
-        </h2>
         <div className="w-full">
           <ParallaxBanner
             layers={[
@@ -33,7 +30,7 @@ export default function Projects() {
             className="lg:aspect-[2/1] h-[750px] w-full"
           >
             <div className="absolute inset-0 flex flex-col items-center justify-center space-y-20">
-              <h1 className="lg:text-6xl text-4xl text-white font-sans tracking-widest font-light flex flex-wrap text-center">
+              <h1 className="lg:text-[50px] text-4xl text-white font-sans tracking-widest font-light flex flex-wrap text-center">
                 {t('banner.title')}
               </h1>
               <Link href="/proyectos">

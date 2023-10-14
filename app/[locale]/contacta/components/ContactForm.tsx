@@ -51,7 +51,7 @@ export default function ContactForm() {
             onChange={() => setAceptaPoliticas(!aceptaPoliticas)}
             className="w-8 h-8 text-aeh_primary bg-gray-100 border-gray-300 rounded focus:ring-aeh_primary dark:focus:ring-aeh_primary dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
           />
-          <p className="font-sans text-gray-600 text-xl lg:text-3xl tracking-widest">
+          <p className="font-sans text-gray-600 text-xl md:text-sm lg:text-xl tracking-widest">
             {t('conditions')}
           </p>
         </div>

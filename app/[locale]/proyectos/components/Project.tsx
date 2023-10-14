@@ -21,24 +21,24 @@ export default function Project({ orientation = 'left' }) {
           alt="AEH Group project 1"
           width={620}
           height={620}
-          className="object-cover w-full lg:h-[820px] h-[200px] mb-6 lg:mb-0"
+          className="object-cover w-full lg:h-[620px] h-[200px] mb-6 lg:mb-0"
         />
       </div>
       <div
-        className={`col-span-1 space-y-3 lg:space-y-5 flex flex-col justify-center lg:px-10  ${orderSecondColumnClassName}`}
+        className={`col-span-1 space-y-3 lg:space-y-5 flex flex-col justify-center lg:px-14  ${orderSecondColumnClassName}`}
       >
         <h2
-          className={`font-sans text-xl  lg:text-4xl text-gray-600 tracking-widest ${orientationClassName}`}
+          className={`font-sans text-xl  lg:text-2xl text-gray-600 tracking-widest ${orientationClassName}`}
         >
           AÑO
         </h2>
         <h3
-          className={`font-sans text-2xl lg:text-4xl text-aeh_primary tracking-widest ${orientationClassName}`}
+          className={`font-sans text-2xl lg:text-3xl text-aeh_primary tracking-widest ${orientationClassName}`}
         >
           NOMBRE DEL PROYECTO
         </h3>
         <p
-          className={`font-sans font-light text-gray-600 text-md lg:text-2xl tracking-widest ${orientationClassName} `}
+          className={`font-thin font-sans text-gray-600 leading-normal lg:text-lg tracking-widest ${orientationClassName} `}
         >
           Nuestra dedicación a la excelencia se refleja en cada proyecto que
           llevamos a cabo. Desde el primer contacto hasta la entrega final, nos

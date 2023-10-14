@@ -14,7 +14,7 @@ export default function ServicesSection() {
     <div className="flex flex-col items-center">
       <div className="">
         <FadeInAnimation>
-          <h2 className="text-gray-600 font-sans text-3xl lg:text-[70px] tracking-widest text-center">
+          <h2 className="text-gray-600 font-sans text-3xl lg:text-[50px] tracking-widest text-center">
             {t('services.header')}
           </h2>
         </FadeInAnimation>
@@ -76,26 +76,28 @@ export default function ServicesSection() {
           />
         </div>
       </div>
-      <div className="px-6 lg:px-32">
-        <div className="w-full mt-20">
+      <Spacer className="h-10 lg:h-20" />
+      <div className="px-6 md:px-10 lg:px-32">
+        <div className="w-full">
           <FadeInAnimation>
-            <div className="flex flex-row justify-end">
-              <h3 className="font-sans text-3xl lg:text-[60px] text-gray-600 tracking-widest font-normal lg:w-3/5 lg:leading-tight self-end">
+            <div className="flex flex-row justify-end md:justify-start lg:justify-start">
+              <h3 className="font-sans text-3xl lg:text-[40px] text-gray-600 tracking-widest font-normal lg:w-full lg:leading-tight self-end">
                 {t('services.title')}
               </h3>
             </div>
           </FadeInAnimation>
         </div>
-        <Spacer className="h-10 lg:h-20" />
-        <div className="flex flex-col lg:grid lg:grid-cols-2 ">
-          <div className="col-span-1 mb-10 lg:mb-0 pl-14 lg:pl-0">
+        <Spacer className="h-10 lg:h-8" />
+        <div className="flex flex-col">
+          <div className="mb-10 lg:mb-0 md:pl-0 pl-14 lg:pl-0">
             <FadeInAnimation>
-              <h4 className="text-xl lg:text-2xl font-thin font-sans text-gray-600 leading-normal tracking-widest">
+              <h4 className="text-lg lg:text-xl font-thin font-sans text-gray-600 leading-normal tracking-widest">
                 {t('services.subtitle')}
               </h4>
             </FadeInAnimation>
           </div>
-          <div className="col-span-1 flex flex-col justify-end items-start lg:items-end">
+          <Spacer className="h-0 lg:h-10" />
+          <div className="flex flex-col justify-start items-start lg:items-start">
             <FadeInAnimation>
               <Link href="/servicios">
                 <Button mode="primary" text={t('buttons.services')} />

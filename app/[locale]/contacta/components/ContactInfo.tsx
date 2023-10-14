@@ -9,7 +9,7 @@ export default function ContactInfo() {
         alt="AEH Group contact info"
         width={500}
         height={300}
-        className="lg:h-[700px] h-[500px] w-[300] object-cover px-10 lg:px-0"
+        className="lg:h-[700px] h-[500px] w-[300px] md:w-full object-cover px-0 md:px-10"
       />
       <div className="flex flex-col items-center">
         <p className="font-sans text-gray-600 text-xl lg:text-3xl tracking-widest my-3 lg:my-10">

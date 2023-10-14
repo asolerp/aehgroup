@@ -13,7 +13,7 @@ export default function MessagesSection() {
           shouldAlwaysCompleteAnimation
         >
           <FadeInAnimation>
-            <h3 className="font-sans text-2xl lg:text-[50px] text-gray-600 tracking-widest font-normal lg:w-3/5 lg:leading-tight">
+            <h3 className="font-sans text-2xl lg:text-[30px] text-gray-600 tracking-widest font-normal lg:w-3/5 lg:leading-tight">
               {t('subtitle_1')}
             </h3>
           </FadeInAnimation>
@@ -27,7 +27,7 @@ export default function MessagesSection() {
         >
           <FadeInAnimation>
             <div className="flex justify-end">
-              <h3 className="font-sans text-2xl lg:text-[50px] text-gray-600 tracking-widest font-normal lg:w-3/5 lg:leading-tight text-right">
+              <h3 className="font-sans text-2xl lg:text-[30px] text-gray-600 tracking-widest font-normal lg:w-3/5 lg:leading-tight text-right">
                 {t('subtitle_2')}
               </h3>
             </div>

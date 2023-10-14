@@ -9,27 +9,20 @@ import AboutUsSection from './components/AboutUsSection'
 
 import ProjectsSection from './components/ProjectsSection'
 import ServicesSection from './components/ServicesSection'
-import { Parallax } from 'react-scroll-parallax'
+import { Parallax, ParallaxBanner } from 'react-scroll-parallax'
 
 import Spacer from '../../components/Spacer'
 import { useTranslations } from 'next-intl'
+import { motion } from 'framer-motion'
+import HeroSection from './components/HeroSection'
 
 const Home = () => {
   const t = useTranslations('HomePage')
 
   return (
-    <LayoutWithMainTitleAnimation inputString={t('title')}>
-      <Spacer className="mb-10 lg:mb-32" />
+    <LayoutWithMainTitleAnimation>
       <div className="flex flex-col items-center">
-        <Parallax scale={[1, 0.8]} shouldAlwaysCompleteAnimation>
-          <Image
-            alt="AEH Group Hero"
-            src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_1.png"
-            width={1400}
-            height={700}
-            className={`object-cover w-[500px] h-[500px] lg:w-screen lg:h-screen transition-all duration-500 ease-in-out`}
-          />
-        </Parallax>
+        <HeroSection />
         <Spacer className="mb-10 lg:mb-28" />
         <AboutUsSection />
         <Spacer className="mb-10 lg:mb-32" />

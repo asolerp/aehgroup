@@ -9,7 +9,7 @@ export default function Values() {
     <>
       <FadeInAnimation>
         <div className="py-20 w-full flex justify-center">
-          <h2 className="text-gray-600 font-sans text-[32px] lg:text-[70px] tracking-widest text-center lg:w-2/3 px-10 lg:px-0">
+          <h2 className="text-gray-600 font-sans text-[32px] lg:text-[50px] tracking-widest text-center lg:w-2/3 px-10 lg:px-0">
             {t('title')}
           </h2>
         </div>

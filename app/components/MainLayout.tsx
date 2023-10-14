@@ -16,7 +16,7 @@ export default function MainLayout({
       <Menu />
       <div>
         <NavBar />
-        <Spacer className="pb-10 lg:pb-20" />
+
         {children}
         <Footer />
       </div>

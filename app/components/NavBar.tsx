@@ -31,7 +31,7 @@ export default function NavBar() {
   return (
     <>
       <ParallaxProvider>
-        <div className={`pt-10 lg:px-10 w-full ${backgroundColor}`}>
+        <div className={`py-10 lg:px-10 w-full ${backgroundColor}`}>
           <motion.div
             initial="hidden"
             animate="visible"
@@ -43,7 +43,7 @@ export default function NavBar() {
               easing="easeOutQuad"
               opacity={[1, 0.3]}
               shouldAlwaysCompleteAnimation={true}
-              className="flex flex-row justify-center lg:justify-between items-center w-full"
+              className="flex flex-row justify-between items-center w-full px-5 lg:px-0"
             >
               <Link href="/home">
                 <Image
@@ -51,30 +51,28 @@ export default function NavBar() {
                   alt="AEH Group"
                   width={100}
                   height={100}
-                  className="w-[80px] h-[55px] lg:w-[130px] lg:h-[90px]"
+                  className="w-[65px] h-[45px] lg:w-[110px] lg:h-[70px]"
                 />
               </Link>
               <div className="lg:flex lg:flex-row flex-grow justify-center space-x-20 hidden">
                 <Link href="/home">
-                  <p className="font-sans text-2xl font-light">{t('home')}</p>
+                  <p className="font-sans text-xl font-light">{t('home')}</p>
                 </Link>
                 <Link href="/proyectos">
-                  <p className="font-sans text-2xl font-light">
+                  <p className="font-sans text-xl font-light">
                     {t('projects')}
                   </p>
                 </Link>
                 <Link href="/servicios">
-                  <p className="font-sans text-2xl font-light">
+                  <p className="font-sans text-xl font-light">
                     {t('services')}
                   </p>
                 </Link>
                 <Link href="/equipo">
-                  <p className="font-sans text-2xl font-light">{t('about')}</p>
+                  <p className="font-sans text-xl font-light">{t('about')}</p>
                 </Link>
                 <Link href="/contacta">
-                  <p className="font-sans text-2xl font-light">
-                    {t('contact')}
-                  </p>
+                  <p className="font-sans text-xl font-light">{t('contact')}</p>
                 </Link>
               </div>
               <div className="hidden lg:block lg:w-[100px]"></div>

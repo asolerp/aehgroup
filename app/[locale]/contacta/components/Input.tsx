@@ -22,20 +22,20 @@ const Input: React.FC<Props> = ({
 
   return (
     <div className="w-full">
-      <p className="font-sans text-aeh_primary text-2xl lg:text-3xl mb-4">
+      <p className="font-sans text-aeh_primary text-2xl lg:text-2xl mb-4">
         {label}
       </p>
       {type === 'message' ? (
         <textarea
           {...register(name, { required })}
           placeholder={placeholder}
-          className={`font-sans text-[20px] lg:text-[50px] outline-none text-aeh_primary placeholder-aeh_primary w-full tracking-widest align-top ${height}`}
+          className={`font-sans text-[20px] md:text-[20px] lg:text-[30px] outline-none text-aeh_primary placeholder-aeh_primary w-full tracking-widest align-top ${height}`}
         ></textarea>
       ) : (
         <input
           {...register(name, { required })}
           type={type}
-          className={`font-sans text-[20px] lg:text-[50px] outline-none text-aeh_primary placeholder-aeh_primary w-full tracking-widest align-top ${height}`}
+          className={`font-sans text-[20px] md:text-[20px] lg:text-[30px] outline-none text-aeh_primary placeholder-aeh_primary w-full tracking-widest align-top ${height}`}
           placeholder={placeholder}
         />
       )}
