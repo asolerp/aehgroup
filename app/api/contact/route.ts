@@ -4,17 +4,18 @@ import { type NextRequest, NextResponse } from 'next/server'
 import Mail from 'nodemailer/lib/mailer'
 
 export async function POST(request: NextRequest) {
-  const { email, message } = await request.json()
+  const { email, name, phone, message } = await request.json()
 
   const mailOptions: Mail.Options = {
     from: 'info@aehgroup.es',
     to: 'info@aehgroup.es',
     // cc: email, (uncomment this line if you want to send a copy to the sender)
-    subject: `Web: Mensaje de ${email}`,
+    subject: `Web: Mensaje de ${name}`,
     text: `
     Hola,
     Tienes un nuevo mensaje desde la web.
     Email: ${email}
+    Teléfono: ${phone}
     Mensaje: ${message}
 
     Un saludo,

@@ -81,10 +81,14 @@
     "title": "¡CONTÁCTANOS!",
     "subtitle": "¿Quieres hacer/reformar tu casa y no sabes por donde empezar?",
     "form": {
-      "email": "Email",
-      "placeholder_email": "PRUEBA@PRUEBA.COM",
-      "message": "Mensaje",
-      "placeholder_message": "CUÉNTANOS TU PROYECTO...",
+      "name": "Nombre y apellidos*",
+      "placeholder_name": "Tu nombre",
+      "phone": "Teléfono*",
+      "placeholder_phone": "Tu teléfono",
+      "email": "Email*",
+      "placeholder_email": "Tu email",
+      "message": "Mensaje*",
+      "placeholder_message": "Cuéntanos tu proyecto..",
       "conditions": "He leído y acepto la política de privacidad",
       "send": "Enviar"
     }

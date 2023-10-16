@@ -81,11 +81,15 @@
     "title": "KONTAKTIEREN SIE UNS!",
     "subtitle": "Möchten Sie Ihr Haus bauen/renovieren und wissen nicht, wo Sie anfangen sollen?",
     "form": {
-      "email": "E-Mail",
-      "placeholder_email": "TEST@TEST.COM",
-      "message": "Nachricht",
-      "placeholder_message": "ERZÄHLEN SIE UNS VON IHREM PROJEKT...",
-      "conditions": "Ich habe die Datenschutzerklärung gelesen und akzeptiere sie",
+      "name": "Vollständiger Name*",
+      "placeholder_name": "Dein Name",
+      "phone": "Telefon*",
+      "placeholder_phone": "Deine Telefonnummer",
+      "email": "E-Mail*",
+      "placeholder_email": "Deine E-Mail",
+      "message": "Nachricht*",
+      "placeholder_message": "Erzähle uns von deinem Projekt..",
+      "conditions": "Ich habe die Datenschutzerklärung gelesen und stimme zu",
       "send": "Senden"
     }
   }

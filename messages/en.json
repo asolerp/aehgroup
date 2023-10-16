@@ -81,11 +81,15 @@
     "title": "CONTACT US!",
     "subtitle": "Do you want to make/renovate your house and don't know where to start?",
     "form": {
-      "email": "Email",
-      "placeholder_email": "TEST@TEST.COM",
-      "message": "Message",
-      "placeholder_message": "TELL US ABOUT YOUR PROJECT...",
-      "conditions": "I have read and accept the privacy policy",
+      "name": "Full name*",
+      "placeholder_name": "Your name",
+      "phone": "Phone*",
+      "placeholder_phone": "Your phone",
+      "email": "Email*",
+      "placeholder_email": "Your email",
+      "message": "Message*",
+      "placeholder_message": "Tell us about your project..",
+      "conditions": "I have read and agree to the privacy policy",
       "send": "Send"
     }
   }

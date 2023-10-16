@@ -103,7 +103,7 @@ export default function Menu() {
                 >
                   <p
                     onClick={() => handleRouteChange(item.path)}
-                    className="font-sans text-[30px] lg:text-[50px] font-light tracking-widest cursor-pointer text-gray-600"
+                    className="font-sans text-[20px] lg:text-[40px] font-light tracking-widest cursor-pointer text-gray-600"
                   >
                     {item.label}
                   </p>
