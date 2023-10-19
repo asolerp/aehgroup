@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import Spacer from '@/app/components/Spacer'
 import { useTranslations } from 'next-intl'
 import Button from '@/app/components/Button'
+import Link from 'next/link'
 
 export default function HeroSection() {
   const t = useTranslations('HomePage')
@@ -38,7 +39,9 @@ export default function HeroSection() {
                   {t('title')}
                 </h1>
                 <Spacer className="mb-2 lg:mb-12" />
-                <Button text={t('hero.button')} outline />
+                <Link href="/contacta">
+                  <Button text={t('hero.button')} outline />
+                </Link>
               </motion.div>
             </div>
           </>
