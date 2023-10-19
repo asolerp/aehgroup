@@ -1,7 +1,9 @@
-import { mapBgImages } from '@/app/utils/constants'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
+import Link from 'next/link'
 
-export default function Project({ orientation = 'left' }) {
+const Project: React.FC<any> = ({ project, orientation = 'left' }) => {
+  const t = useTranslations('Common')
   const orientationClassName =
     orientation === 'left' ? 'lg:text-right' : 'lg:text-left'
 
@@ -17,7 +19,7 @@ export default function Project({ orientation = 'left' }) {
         className={`col-span-1 flex items-center justify-center ${orderFirstColumnClassName}`}
       >
         <Image
-          src={mapBgImages.bg_1}
+          src={project.mainImage}
           alt="AEH Group project 1"
           width={620}
           height={620}
@@ -28,25 +30,30 @@ export default function Project({ orientation = 'left' }) {
         className={`col-span-1 space-y-3 lg:space-y-5 flex flex-col justify-center lg:px-14  ${orderSecondColumnClassName}`}
       >
         <h2
-          className={`font-sans text-xl  lg:text-2xl text-gray-600 tracking-widest ${orientationClassName}`}
+          className={`font-sans text-xl  lg:text-2xl text-aeh-700 tracking-widest ${orientationClassName}`}
         >
-          AÑO
+          {project.year}
         </h2>
         <h3
-          className={`font-sans text-2xl lg:text-3xl text-aeh_primary tracking-widest ${orientationClassName}`}
+          className={`font-sans text-2xl lg:text-3xl text-aeh-300 tracking-widest ${orientationClassName}`}
         >
-          NOMBRE DEL PROYECTO
+          {project.title}
         </h3>
         <p
-          className={`font-thin font-sans text-gray-600 leading-normal lg:text-lg tracking-widest ${orientationClassName} `}
+          className={`font-thin font-sans text-aeh-800 leading-normal lg:text-lg tracking-widest ${orientationClassName} `}
         >
-          Nuestra dedicación a la excelencia se refleja en cada proyecto que
-          llevamos a cabo. Desde el primer contacto hasta la entrega final, nos
-          esforzamos por brindar un servicio profesional y de calidad. Nuestro
-          objetivo es superar las expectativas de nuestros clientes en cada paso
-          del camino.
+          {project.description}
         </p>
+        <Link href={`proyectos/${project.title}`}>
+          <h2
+            className={`font-sans text-lg  lg:text-2xl text-aeh-700 tracking-widest text-left lg:text-right underline ${orientationClassName}`}
+          >
+            {t('seeMore')}
+          </h2>
+        </Link>
       </div>
     </div>
   )
 }
+
+export default Project

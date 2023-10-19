@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { Turn as Hamburger } from 'hamburger-react'
 import { useMenuContext } from '../context/MenuContext'
 import debounce from 'lodash.debounce'
-import { usePathname } from 'next/navigation'
+
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 import { useTranslations } from 'next-intl'
 
@@ -14,6 +14,14 @@ const variants: Variants = {
   hidden: { opacity: 0, y: -50 },
   visible: { opacity: 1, y: 0 },
 }
+
+const linkItems = [
+  { href: '/home', text: 'home' },
+  { href: '/proyectos', text: 'projects' },
+  { href: '/servicios', text: 'services' },
+  { href: '/equipo', text: 'about' },
+  { href: '/contacta', text: 'contact' },
+]
 
 const LOGO_ROUTE =
   'https://res.cloudinary.com/caskchain/image/upload/v1696229637/AEHGroup/AEHGROUP_LOGO.jpg'
@@ -55,25 +63,13 @@ export default function NavBar() {
                 />
               </Link>
               <div className="lg:flex lg:flex-row flex-grow justify-center space-x-20 hidden">
-                <Link href="/home">
-                  <p className="font-sans text-xl font-light">{t('home')}</p>
-                </Link>
-                <Link href="/proyectos">
-                  <p className="font-sans text-xl font-light">
-                    {t('projects')}
-                  </p>
-                </Link>
-                <Link href="/servicios">
-                  <p className="font-sans text-xl font-light">
-                    {t('services')}
-                  </p>
-                </Link>
-                <Link href="/equipo">
-                  <p className="font-sans text-xl font-light">{t('about')}</p>
-                </Link>
-                <Link href="/contacta">
-                  <p className="font-sans text-xl font-light">{t('contact')}</p>
-                </Link>
+                {linkItems.map((item, index) => (
+                  <Link key={index} href={item.href}>
+                    <p className="font-sans text-xl font-light text-aeh-800">
+                      {t(item.text)}
+                    </p>
+                  </Link>
+                ))}
               </div>
               <div className="hidden lg:block lg:w-[100px]"></div>
             </Parallax>
@@ -83,9 +79,10 @@ export default function NavBar() {
             animate="visible"
             variants={variants}
             transition={{ duration: 1, ease: 'easeInOut' }}
-            className="absolute right-4 top-10 lg:fixed lg:top-12 lg:right-10 z-50 lg:w-[100px]"
+            className="absolute right-4 top-10 lg:fixed lg:top-12 lg:right-10 z-40 lg:w-[100px]"
           >
             <Hamburger
+              color="#313e3a"
               toggled={menuOpen}
               size={30}
               onToggle={(state) => handleMenuToggle(state)}

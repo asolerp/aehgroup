@@ -1,11 +1,10 @@
-import { mapBgImages } from '@/app/utils/constants'
 import Image from 'next/image'
 
 export default function ContactInfo() {
   return (
     <div className="flex flex-col items-center space-y-10 mb-20">
       <Image
-        src={mapBgImages.bg_1}
+        src="https://res.cloudinary.com/caskchain/image/upload/v1697698149/AEHGroup/B55/B55-53-min.jpg"
         alt="AEH Group contact info"
         width={500}
         height={300}

@@ -10,7 +10,7 @@ export default function Commitment() {
     <div className="h-screen lg:grid lg:grid-cols-2">
       <div className="hidden lg:block col-span-1">
         <Image
-          src={mapBgImages.bg_2}
+          src="https://res.cloudinary.com/caskchain/image/upload/v1697697796/AEHGroup/PP50/PP50-2.jpg"
           alt="AEH Group"
           width={500}
           height={300}
@@ -19,7 +19,7 @@ export default function Commitment() {
       </div>
       <div className="relative w-full h-screen overflow-hidden bg-cover bg-[50%] bg-no-repeat lg:hidden">
         <Image
-          src={mapBgImages.bg_2}
+          src="https://res.cloudinary.com/caskchain/image/upload/v1697697796/AEHGroup/PP50/PP50-2.jpg"
           alt="AEH Group"
           width={500}
           height={300}

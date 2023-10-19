@@ -14,7 +14,7 @@ export default function ServicesSection() {
     <div className="flex flex-col items-center">
       <div className="">
         <FadeInAnimation>
-          <h2 className="text-gray-600 font-sans text-3xl lg:text-[50px] tracking-widest text-center">
+          <h2 className="text-aeh-700 font-sans text-3xl lg:text-[50px] tracking-widest text-center">
             {t('services.header')}
           </h2>
         </FadeInAnimation>
@@ -24,7 +24,7 @@ export default function ServicesSection() {
         <div className="col-span-1">
           <Image
             alt="AEH Group Hero"
-            src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_1.png"
+            src="https://res.cloudinary.com/caskchain/image/upload/v1697697802/AEHGroup/S9/Serralet-2.jpg"
             width={480}
             height={480}
             className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
@@ -33,7 +33,7 @@ export default function ServicesSection() {
         <div className="col-span-1">
           <Image
             alt="AEH Group Hero"
-            src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_2.png"
+            src="https://res.cloudinary.com/caskchain/image/upload/v1697698151/AEHGroup/B55/B55-4-min.jpg"
             width={480}
             height={480}
             className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
@@ -42,7 +42,7 @@ export default function ServicesSection() {
         <div className="col-span-1">
           <Image
             alt="AEH Group Hero"
-            src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_3.png"
+            src="https://res.cloudinary.com/caskchain/image/upload/v1697699052/AEHGroup/JV22/JV22-18-min.jpg"
             width={480}
             height={480}
             className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
@@ -51,7 +51,7 @@ export default function ServicesSection() {
         <div className="col-span-1">
           <Image
             alt="AEH Group Hero"
-            src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_2.png"
+            src="https://res.cloudinary.com/caskchain/image/upload/v1697698152/AEHGroup/B55/B55-8-min.jpg"
             width={480}
             height={480}
             className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
@@ -60,7 +60,7 @@ export default function ServicesSection() {
         <div className="col-span-1">
           <Image
             alt="AEH Group Hero"
-            src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_3.png"
+            src="https://res.cloudinary.com/caskchain/image/upload/v1697698153/AEHGroup/B55/B55-12-min.jpg"
             width={480}
             height={480}
             className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
@@ -69,7 +69,7 @@ export default function ServicesSection() {
         <div className="col-span-1">
           <Image
             alt="AEH Group Hero"
-            src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_1.png"
+            src="https://res.cloudinary.com/caskchain/image/upload/v1697698158/AEHGroup/B55/B55-34-min.jpg"
             width={480}
             height={480}
             className="object-cover lg:w-[480px] lg:h-[480px] w-[200px] h-[200px]"
@@ -81,7 +81,7 @@ export default function ServicesSection() {
         <div className="w-full">
           <FadeInAnimation>
             <div className="flex flex-row justify-end md:justify-start lg:justify-start">
-              <h3 className="font-sans text-3xl lg:text-[40px] text-gray-600 tracking-widest font-normal lg:w-full lg:leading-tight self-end">
+              <h3 className="font-sans text-3xl lg:text-[40px] text-aeh-700 tracking-widest font-normal lg:w-full lg:leading-tight self-end">
                 {t('services.title')}
               </h3>
             </div>
@@ -89,10 +89,15 @@ export default function ServicesSection() {
         </div>
         <Spacer className="h-10 lg:h-8" />
         <div className="flex flex-col">
-          <div className="mb-10 lg:mb-0 md:pl-0 pl-14 lg:pl-0">
+          <div className="mb-10 lg:mb-0 md:pl-0 pl-14 lg:pl-0 space-y-4">
             <FadeInAnimation>
-              <h4 className="text-lg lg:text-xl font-thin font-sans text-gray-600 leading-normal tracking-widest">
-                {t('services.subtitle')}
+              <h4 className="text-lg lg:text-xl font-thin font-sans text-aeh-700 leading-normal tracking-widest">
+                {t('services.subtitle_1')}
+              </h4>
+            </FadeInAnimation>
+            <FadeInAnimation>
+              <h4 className="text-lg lg:text-xl font-thin font-sans text-aeh-700 leading-normal tracking-widest">
+                {t('services.subtitle_2')}
               </h4>
             </FadeInAnimation>
           </div>

@@ -15,15 +15,15 @@ type ImageMap = {
 
 const mapImagesByPath: ImageMap = {
   '/home':
-    'https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_1.png',
+    'https://res.cloudinary.com/caskchain/image/upload/v1697697796/AEHGroup/PP50/PP50-3.jpg',
   '/proyectos':
-    'https://res.cloudinary.com/caskchain/image/upload/v1695192615/AEHGroup/aeh_bg_3.png',
+    'https://res.cloudinary.com/caskchain/image/upload/v1697698155/AEHGroup/B55/B55-18-min.jpg',
   '/servicios':
-    'https://res.cloudinary.com/caskchain/image/upload/v1695115179/AEHGroup/aeh_bg_2.png',
+    'https://res.cloudinary.com/caskchain/image/upload/v1697697801/AEHGroup/S9/Serralet-11.jpg',
   '/equipo':
-    'https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_1.png',
+    'https://res.cloudinary.com/caskchain/image/upload/v1697698160/AEHGroup/B55/B55-52-min.jpg',
   '/contacta':
-    'https://res.cloudinary.com/caskchain/image/upload/v1695192615/AEHGroup/aeh_bg_3.png',
+    'https://res.cloudinary.com/caskchain/image/upload/v1697699056/AEHGroup/JV22/JV22-14-min.jpg',
 }
 
 export default function useMenuHandler() {

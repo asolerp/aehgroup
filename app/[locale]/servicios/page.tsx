@@ -23,12 +23,13 @@ export default function Projects() {
             layers={[
               {
                 image:
-                  'https://res.cloudinary.com/caskchain/image/upload/v1695623424/AEHGroup/bg_with_mask.png',
+                  'https://res.cloudinary.com/caskchain/image/upload/v1697697800/AEHGroup/S9/Serralet-9.jpg',
                 speed: -20,
               },
             ]}
             className="lg:aspect-[2/1] h-[750px] w-full"
           >
+            <div className="absolute w-full h-full bg-aeh-400 opacity-70 " />
             <div className="absolute inset-0 flex flex-col items-center justify-center space-y-20">
               <h1 className="lg:text-[50px] text-4xl text-white font-sans tracking-widest font-light flex flex-wrap text-center">
                 {t('banner.title')}
@@ -40,10 +41,10 @@ export default function Projects() {
           </ParallaxBanner>
         </div>
         <div className="mt-20 lg:mt-40 lg:px-20 px-6 lg:space-y-22 space-y-16">
-          <Service text={t('service_1')} image={mapBgImages.bg_1} />
-          <Service text={t('service_2')} image={mapBgImages.bg_2} />
-          <Service text={t('service_3')} image={mapBgImages.bg_3} />
-          <Service text={t('service_4')} image={mapBgImages.bg_2} />
+          <Service text={t('service_1')} image={mapBgImages.viviendas} />
+          <Service text={t('service_2')} image={mapBgImages.exteriores} />
+          <Service text={t('service_3')} image={mapBgImages.baños} />
+          <Service text={t('service_4')} image={mapBgImages.cocinas} />
         </div>
       </div>
       <Spacer className="pb-10 lg:pb-20" />

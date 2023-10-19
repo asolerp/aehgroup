@@ -1,5 +1,10 @@
 export const mapBgImages = {
-  bg_1: 'https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_1.png',
-  bg_2: 'https://res.cloudinary.com/caskchain/image/upload/v1695115179/AEHGroup/aeh_bg_2.png',
-  bg_3: 'https://res.cloudinary.com/caskchain/image/upload/v1695192615/AEHGroup/aeh_bg_3.png',
+  viviendas:
+    'https://res.cloudinary.com/caskchain/image/upload/v1697699053/AEHGroup/JV22/JV22-4-min.jpg',
+  exteriores:
+    'https://res.cloudinary.com/caskchain/image/upload/v1697698150/AEHGroup/B55/B55-55-min.jpg',
+  baños:
+    'https://res.cloudinary.com/caskchain/image/upload/v1697697796/AEHGroup/PP50/PP50-2.jpg',
+  cocinas:
+    'https://res.cloudinary.com/caskchain/image/upload/v1697698160/AEHGroup/B55/B55-52-min.jpg',
 }

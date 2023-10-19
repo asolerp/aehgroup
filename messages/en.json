@@ -1,37 +1,48 @@
 {
+  "Common": {
+    "seeMore": "See more"
+  },
   "LocaleLayout": {
     "title": "AEH Group"
   },
   "Footer": {
-    "contact": "Contact Us",
-    "callUs": "Call Us",
-    "writeUs": "Write to Us",
-    "followUs": "Follow Us",
-    "form": "Form"
+    "contact": "Contact us",
+    "callUs": "Call us",
+    "writeUs": "Write to us",
+    "followUs": "Follow us",
+    "form": "Form",
+    "legalTexts": "Legal texts",
+    "privacyPolicy": "Privacy policy",
+    "cookiesPolicy": "Cookies policy"
   },
   "Menu": {
     "home": "Home",
-    "about": "About Us",
+    "about": "About us",
     "services": "Services",
     "projects": "Projects",
     "contact": "Contact"
   },
   "HomePage": {
     "buttons": {
-      "about": "About Us",
+      "about": "About us",
       "contact": "Contact",
       "services": "Services",
       "projects": "Projects"
     },
     "title": "WE BUILD YOUR LIFESTYLE",
+    "hero": {
+      "button": "Contact"
+    },
     "about": {
       "title": "We help you create and build your perfect space.",
-      "subtitle": "From first contact to final delivery, we are committed to carrying out each project in an exceptional way to exceed your expectations. Merging construction, design and professionalism we want to offer you our best services in all types of renovations, rehabilitations and works."
+      "subtitle_1": "From the first contact, we dedicate ourselves to understanding and materializing your vision. We are guided by a firm commitment to exceed expectations, ensuring that every project shines with excellence and meticulousness. Our distinction lies in the perfect combination of construction, design and professionalism. We don't just build; we merge technique and aesthetics so that each space reflects authenticity and functionality.",
+      "subtitle_2": "Our multidisciplinary team focuses on innovative solutions, regardless of whether it is a small reform or a large-scale project. Our stamp on each work is passion, experience and an unwavering dedication to constructive and design art."
     },
     "services": {
-      "header": "QUALITY FROM THE MINIMUM DETAIL",
+      "header": "QUALITY FROM THE SMALLEST DETAIL",
       "title": "Your satisfaction is our main goal.",
-      "subtitle": "We work from transparency to generate relationships with our clients based on trust. We want to help you throughout the process to achieve your dream space, for this we have a team made up of qualified personnel."
+      "subtitle_1": "Transparency is the fundamental pillar of our work, and it is through it that we seek to forge solid and lasting relationships with our clients. We believe that open and sincere communication is essential to understand your needs and visions, thus allowing us to build spaces that reflect your dreams. It is this commitment that has allowed us to establish bonds of trust, where each client feels supported and accompanied throughout the process.",
+      "subtitle_2": "Our differentiator lies in the talented team we have. Highly qualified professionals who not only bring their technical experience, but also an unwavering passion for excellence. Their dedication ensures that every project, regardless of its size, is carried out with precision, attention to detail and, above all, with the heart put into making your dream space a reality."
     }
   },
   "ProjectsPage": {
@@ -41,47 +52,47 @@
     "title": "OUR SERVICES",
     "subtitle": "In each project, from the initial search for ideas to the final result, we help you create and build your perfect space in all types of renovations, rehabilitations and works.",
     "banner": {
-      "title": "COMPREHENSIVE REFORMS",
+      "title": "COMPLETE REFORMS",
       "button": "See more"
     },
-    "service_1": "COMPREHENSIVE REFORMS",
-    "service_2": "FACADES",
-    "service_3": "EXTERIORS",
-    "service_4": "BATHROOMS"
+    "service_1": "HOUSING",
+    "service_2": "EXTERIORS",
+    "service_3": "BATHROOMS",
+    "service_4": "KITCHENS"
   },
   "AboutPage": {
-    "title": "DISCOVER OUR TEAM",
-    "subtitle_1": "We are committed to taking care of every detail during the execution of a work, accompanying you all the way to fulfill your dreams.",
-    "subtitle_2": "For this, we have a team made up of highly qualified personnel eager to improve at every step they take.",
+    "title": "MEET OUR TEAM",
+    "subtitle_1": "We commit ourselves to take care of even the smallest detail during the execution of a work, accompanying you all the way to fulfill your dreams.",
+    "subtitle_2": "For this, we have a team made up of highly qualified personnel eager to improve with each step they take.",
     "commitment": {
       "title": "QUALITY",
       "subtitle": "Based on trust, professionalism and transparency; and merging architecture, construction and design, we work to exceed your expectations."
     },
     "values": {
-      "title": "WE ARE WHO WE ARE FOR OUR VALUES",
+      "title": "WE ARE WHO WE ARE BECAUSE OF OUR VALUES",
       "value_1": {
         "title": "Architecture, construction and design:",
         "subtitle": "Our love for architecture, construction and design unites us. We help you merge these concepts with the help of our technical team, looking for the best way to take advantage of space in a practical and functional way, adapting to each type of client to link quality and design."
       },
       "value_2": {
         "title": "Commitment and professionalism:",
-        "subtitle": "We commit ourselves to carry out the entire execution process in a professional manner, to reach and meet the quality standards that your project deserves. We have the right staff who can accompany you throughout the journey."
+        "subtitle": "We commit ourselves to carry out the entire execution process in a professional manner, to meet and fulfill the quality standards that your project deserves. We have the right personnel who can accompany you throughout the journey."
       },
       "value_3": {
         "title": "Trust and transparency:",
-        "subtitle": "Trust is the basis of any relationship. You are leaving in our hands the realization of that space that you want to create or improve. We will treat it as if it were ours, giving the same importance to the process as to the final result."
+        "subtitle": "Trust is the basis of any relationship. You are leaving in our hands the realization of that space you want to create or improve. We will treat it as if it were ours, giving the same importance to the process as to the final result."
       },
       "value_4": {
         "title": "Team:",
-        "subtitle": "Our goal is to facilitate the execution of the works, organizing, coordinating and supervising the entire process. We work together to minimize as much as possible the problems that may arise, or on the contrary, to swiftly find solutions. We have a team with experience in the construction sector, which we trust to achieve the expected results."
+        "subtitle": "Our goal is to facilitate the execution of works, organizing, coordinating and supervising the entire process. We work together to minimize the problems that may arise as much as possible, or on the contrary, to quickly find solutions. We have a team with experience in the construction sector, in which we trust to achieve the expected results."
       }
     }
   },
   "ContactPage": {
     "title": "CONTACT US!",
-    "subtitle": "Do you want to make/renovate your house and don't know where to start?",
+    "subtitle": "Do you want to make/reform your house and don't know where to start?",
     "form": {
-      "name": "Full name*",
+      "name": "Name and surname*",
       "placeholder_name": "Your name",
       "phone": "Phone*",
       "placeholder_phone": "Your phone",
@@ -89,7 +100,7 @@
       "placeholder_email": "Your email",
       "message": "Message*",
       "placeholder_message": "Tell us about your project..",
-      "conditions": "I have read and agree to the privacy policy",
+      "conditions": "I have read and accept the privacy policy",
       "send": "Send"
     }
   }

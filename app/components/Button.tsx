@@ -29,11 +29,11 @@ const Button: React.FC<Props> = ({
     ? 'bg-transparent'
     : mode === 'primary'
     ? 'bg-aeh_secondary'
-    : 'bg-aeh_tertiary'
+    : 'bg-aeh-500'
   const textButton = outline
     ? 'text-white'
     : mode === 'primary'
-    ? 'text-aeh_primary'
+    ? 'text-aeh-500'
     : 'text-aeh_secondary'
 
   return (

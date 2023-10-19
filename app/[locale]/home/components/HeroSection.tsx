@@ -13,14 +13,14 @@ export default function HeroSection() {
           layers={[
             {
               image:
-                'https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_1.png',
+                'https://res.cloudinary.com/caskchain/image/upload/v1697698150/AEHGroup/B55/B55-46-min.jpg',
               speed: -20,
             },
           ]}
           className="lg:aspect-[2/1] h-[550px] lg:h-screen w-full"
         >
           <>
-            <div className="absolute w-full h-full bg-aeh_primary opacity-70 " />
+            <div className="absolute w-full h-full bg-aeh-400 opacity-70 " />
             <div className="absolute inset-0 flex flex-col items-center justify-center space-y-20 px-16">
               <motion.div
                 className="flex flex-col items-center"
@@ -38,7 +38,7 @@ export default function HeroSection() {
                   {t('title')}
                 </h1>
                 <Spacer className="mb-2 lg:mb-12" />
-                <Button text="Contacta" outline />
+                <Button text={t('hero.button')} outline />
               </motion.div>
             </div>
           </>

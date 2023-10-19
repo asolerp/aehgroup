@@ -1,16 +1,22 @@
 {
+  "Common": {
+    "seeMore": "Mehr sehen"
+  },
   "LocaleLayout": {
     "title": "AEH Group"
   },
   "Footer": {
     "contact": "Kontaktiere uns",
-    "callUs": "Ruf uns an",
-    "writeUs": "Schreib uns",
-    "followUs": "Folge uns",
-    "form": "Formular"
+    "callUs": "Rufen Sie uns an",
+    "writeUs": "Schreiben Sie uns",
+    "followUs": "Folgen Sie uns",
+    "form": "Formular",
+    "legalTexts": "Rechtstexte",
+    "privacyPolicy": "Datenschutz-Bestimmungen",
+    "cookiesPolicy": "Cookie-Richtlinie"
   },
   "Menu": {
-    "home": "Startseite",
+    "home": "Start",
     "about": "Über uns",
     "services": "Dienstleistungen",
     "projects": "Projekte",
@@ -24,14 +30,19 @@
       "projects": "Projekte"
     },
     "title": "WIR BAUEN IHREN LEBENSSTIL",
+    "hero": {
+      "button": "Kontakt"
+    },
     "about": {
-      "title": "Wir helfen Ihnen, Ihren perfekten Raum zu erstellen und zu bauen.",
-      "subtitle": "Vom ersten Kontakt bis zur endgültigen Lieferung sind wir bestrebt, jedes Projekt auf außergewöhnliche Weise durchzuführen, um Ihre Erwartungen zu übertreffen. Durch die Verbindung von Bau, Design und Professionalität möchten wir Ihnen unsere besten Dienstleistungen bei allen Arten von Renovierungen, Sanierungen und Arbeiten anbieten."
+      "title": "Wir helfen Ihnen dabei, Ihren perfekten Raum zu kreieren und zu bauen.",
+      "subtitle_1": "Vom ersten Kontakt an widmen wir uns dem Verstehen und Materialisieren Ihrer Vision. Wir werden von einem festen Engagement geleitet, um Erwartungen zu übertreffen und sicherzustellen, dass jedes Projekt mit Exzellenz und Genauigkeit glänzt. Unsere Unterscheidung liegt in der perfekten Kombination aus Bau, Design und Professionalität. Wir bauen nicht nur; wir verschmelzen Technik und Ästhetik, damit jeder Raum Authentizität und Funktionalität widerspiegelt.",
+      "subtitle_2": "Unser multidisziplinäres Team konzentriert sich auf innovative Lösungen, unabhängig davon, ob es sich um eine kleine Reform oder ein groß angelegtes Projekt handelt. Unser Stempel auf jeder Arbeit ist Leidenschaft, Erfahrung und eine unerschütterliche Hingabe an die konstruktive und gestalterische Kunst."
     },
     "services": {
       "header": "QUALITÄT BIS INS KLEINSTE DETAIL",
       "title": "Ihre Zufriedenheit ist unser Hauptziel.",
-      "subtitle": "Wir arbeiten transparent, um Beziehungen zu unseren Kunden auf der Basis von Vertrauen aufzubauen. Wir möchten Ihnen helfen, Ihren Traumraum zu erreichen, und haben dafür ein Team aus qualifizierten Mitarbeitern."
+      "subtitle_1": "Transparenz ist das grundlegende Prinzip unserer Arbeit, und durch sie streben wir danach, solide und dauerhafte Beziehungen zu unseren Kunden aufzubauen. Wir glauben, dass offene und aufrichtige Kommunikation für das Verständnis Ihrer Bedürfnisse und Visionen unerlässlich ist, sodass wir Räume schaffen können, die Ihre Träume widerspiegeln. Dieses Engagement hat es uns ermöglicht, Vertrauensbeziehungen aufzubauen, in denen sich jeder Kunde während des gesamten Prozesses unterstützt und begleitet fühlt.",
+      "subtitle_2": "Unser Unterscheidungsmerkmal liegt im talentierten Team, das wir haben. Hochqualifizierte Fachleute, die nicht nur ihre technische Erfahrung einbringen, sondern auch eine unerschütterliche Leidenschaft für Exzellenz. Ihre Hingabe stellt sicher, dass jedes Projekt, unabhängig von seiner Größe, mit Präzision, Liebe zum Detail und vor allem mit dem Herzen durchgeführt wird, um Ihren Traumraum Wirklichkeit werden zu lassen."
     }
   },
   "ProjectsPage": {
@@ -39,41 +50,41 @@
   },
   "ServicesPage": {
     "title": "UNSERE DIENSTLEISTUNGEN",
-    "subtitle": "Bei jedem Projekt, von der ersten Ideensuche bis zum endgültigen Ergebnis, helfen wir Ihnen, Ihren perfekten Raum bei allen Arten von Renovierungen, Sanierungen und Arbeiten zu erstellen und zu bauen.",
+    "subtitle": "In jedem Projekt, von der ersten Ideensuche bis zum endgültigen Ergebnis, helfen wir Ihnen, Ihren perfekten Raum in allen Arten von Renovierungen, Sanierungen und Arbeiten zu kreieren und zu bauen.",
     "banner": {
-      "title": "UMFASSENDE REFORMEN",
+      "title": "KOMPLETTE REFORMEN",
       "button": "Mehr sehen"
     },
-    "service_1": "UMFASSENDE REFORMEN",
-    "service_2": "FASSADEN",
-    "service_3": "AUSSENFELDER",
-    "service_4": "BADEZIMMER"
+    "service_1": "WOHNUNGEN",
+    "service_2": "AUSSENRÄUME",
+    "service_3": "BÄDER",
+    "service_4": "KÜCHEN"
   },
   "AboutPage": {
-    "title": "ENTDECKEN SIE UNSER TEAM",
-    "subtitle_1": "Wir setzen uns dafür ein, jedes Detail während der Durchführung einer Arbeit zu beachten und Sie dabei zu begleiten, Ihre Träume zu erfüllen.",
-    "subtitle_2": "Dafür haben wir ein Team aus hochqualifizierten Mitarbeitern, die stets bestrebt sind, sich weiterzuentwickeln.",
+    "title": "LERNEN SIE UNSER TEAM KENNEN",
+    "subtitle_1": "Wir verpflichten uns, selbst das kleinste Detail während der Durchführung einer Arbeit zu beachten und Sie auf dem gesamten Weg zu begleiten, um Ihre Träume zu erfüllen.",
+    "subtitle_2": "Dafür haben wir ein Team aus hochqualifizierten Mitarbeitern, die bestrebt sind, sich bei jedem Schritt, den sie unternehmen, zu verbessern.",
     "commitment": {
       "title": "QUALITÄT",
-      "subtitle": "Auf der Grundlage von Vertrauen, Professionalität und Transparenz und durch die Verbindung von Architektur, Bau und Design arbeiten wir daran, Ihre Erwartungen zu übertreffen."
+      "subtitle": "Auf der Grundlage von Vertrauen, Professionalität und Transparenz; und durch Verschmelzung von Architektur, Bau und Design arbeiten wir daran, Ihre Erwartungen zu übertreffen."
     },
     "values": {
-      "title": "WIR SIND WER WIR SIND WEGEN UNSEREN WERTEN",
+      "title": "WIR SIND WER WIR sind aufgrund unserer Werte",
       "value_1": {
         "title": "Architektur, Bau und Design:",
-        "subtitle": "Uns verbindet die Liebe zur Architektur, zum Bauen und zum Design. Mit Hilfe unseres technischen Teams helfen wir Ihnen, diese Konzepte zu verbinden und den Raum auf praktische und funktionale Weise optimal zu nutzen, indem wir uns an jeden Kundentyp anpassen und Qualität und Design verbinden."
+        "subtitle": "Uns verbindet unsere Liebe zur Architektur, zum Bauen und Designen. Mit Hilfe unseres technischen Teams helfen wir Ihnen, diese Konzepte zu verschmelzen und suchen nach der besten Möglichkeit, den Raum auf praktische und funktionale Weise zu nutzen, um uns an jeden Kundentyp anzupassen und Qualität und Design zu verknüpfen."
       },
       "value_2": {
         "title": "Engagement und Professionalität:",
-        "subtitle": "Wir verpflichten uns, den gesamten Ausführungsprozess professionell durchzuführen, um die Qualitätsstandards zu erreichen und zu erfüllen, die Ihr Projekt verdient. Wir haben das richtige Personal, das Sie auf dem ganzen Weg begleiten kann."
+        "subtitle": "Wir verpflichten uns, den gesamten Durchführungsprozess auf professionelle Weise durchzuführen, um die Qualitätsstandards zu erreichen und zu erfüllen, die Ihr Projekt verdient. Wir haben das richtige Personal, das Sie auf dem ganzen Weg begleiten kann."
       },
       "value_3": {
         "title": "Vertrauen und Transparenz:",
-        "subtitle": "Vertrauen ist die Grundlage jeder Beziehung. Sie überlassen uns die Realisierung des Raumes, den Sie schaffen oder verbessern möchten. Wir werden ihn behandeln, als wäre er unser eigener, und dem Prozess genauso viel Bedeutung beimessen wie dem endgültigen Ergebnis."
+        "subtitle": "Vertrauen ist die Basis jeder Beziehung. Sie lassen in unseren Händen die Realisierung des Raums, den Sie schaffen oder verbessern möchten. Wir werden ihn so behandeln, als ob er unser eigener wäre, indem wir dem Prozess genauso viel Bedeutung beimessen wie dem endgültigen Ergebnis."
       },
       "value_4": {
         "title": "Team:",
-        "subtitle": "Unser Ziel ist es, die Durchführung der Arbeiten zu erleichtern, indem wir den gesamten Prozess organisieren, koordinieren und überwachen. Wir arbeiten gemeinsam daran, Probleme so weit wie möglich zu minimieren, oder im Gegenteil, schnell Lösungen zu finden. Wir haben ein Team mit Erfahrung in der Baubranche, dem wir vertrauen, um die erwarteten Ergebnisse zu erzielen."
+        "subtitle": "Unser Ziel ist es, die Durchführung von Arbeiten zu erleichtern, indem wir den gesamten Prozess organisieren, koordinieren und überwachen. Wir arbeiten zusammen, um die Probleme, die auftreten können, so weit wie möglich zu minimieren oder im Gegenteil, schnell Lösungen zu finden. Wir haben ein Team mit Erfahrung in der Baubranche, dem wir vertrauen, um die erwarteten Ergebnisse zu erzielen."
       }
     }
   },
@@ -81,15 +92,15 @@
     "title": "KONTAKTIEREN SIE UNS!",
     "subtitle": "Möchten Sie Ihr Haus bauen/renovieren und wissen nicht, wo Sie anfangen sollen?",
     "form": {
-      "name": "Vollständiger Name*",
+      "name": "Vor- und Nachname*",
       "placeholder_name": "Dein Name",
       "phone": "Telefon*",
       "placeholder_phone": "Deine Telefonnummer",
-      "email": "E-Mail*",
+      "email": "Email*",
       "placeholder_email": "Deine E-Mail",
       "message": "Nachricht*",
-      "placeholder_message": "Erzähle uns von deinem Projekt..",
-      "conditions": "Ich habe die Datenschutzerklärung gelesen und stimme zu",
+      "placeholder_message": "Erzählen Sie uns von Ihrem Projekt..",
+      "conditions": "Ich habe die Datenschutzerklärung gelesen und akzeptiert",
       "send": "Senden"
     }
   }

@@ -59,7 +59,7 @@ const LayoutWithMainTitleAnimation: React.FC<Props> = ({
                           initial={{ opacity: 0.1 }}
                           animate={{ opacity: 1 }}
                           transition={{ duration: 1, delay: index * 0.1 }}
-                          className="text-gray-600 font-sans text-[25px] lg:text-[50px] tracking-widest"
+                          className="text-aeh-700 font-sans text-[25px] lg:text-[50px] tracking-widest"
                         >
                           {letter}
                         </motion.span>

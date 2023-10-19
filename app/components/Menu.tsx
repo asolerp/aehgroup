@@ -103,7 +103,7 @@ export default function Menu() {
                 >
                   <p
                     onClick={() => handleRouteChange(item.path)}
-                    className="font-sans text-[20px] lg:text-[40px] font-light tracking-widest cursor-pointer text-gray-600"
+                    className="font-sans text-[20px] lg:text-[40px] font-light tracking-widest cursor-pointer text-aeh-700"
                   >
                     {item.label}
                   </p>
@@ -124,7 +124,7 @@ export default function Menu() {
                 <p
                   onClick={() => handleLanguageChange(lang)}
                   key={lang}
-                  className="cursor-pointer font-sans text-[20px] lg:text-[30px] text-aeh_primary"
+                  className="cursor-pointer font-sans text-[20px] lg:text-[30px] text-aeh-400"
                 >
                   {lang.toUpperCase()}
                 </p>

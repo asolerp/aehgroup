@@ -1,4 +1,7 @@
 {
+  "Common": {
+    "seeMore": "Ver más"
+  },
   "LocaleLayout": {
     "title": "AEH Group"
   },
@@ -7,7 +10,10 @@
     "callUs": "Llámanos",
     "writeUs": "Escríbenos",
     "followUs": "Síguenos",
-    "form": "Formulario"
+    "form": "Formulario",
+    "legalTexts": "Textos legales",
+    "privacyPolicy": "Política de privacidad",
+    "cookiesPolicy": "Política de cookies"
   },
   "Menu": {
     "home": "Inicio",
@@ -24,14 +30,19 @@
       "projects": "Proyectos"
     },
     "title": "CONSTRUIMOS TU ESTILO DE VIDA",
+    "hero": {
+      "button": "Contacta"
+    },
     "about": {
       "title": "Te ayudamos a crear y construir tu espacio perfecto.",
-      "subtitle": "Desde el primer contacto hasta la entrega final, nos comprometemos a realizar cada proyecto de una manera excepcional para superar tus expectativas. Fusionando construcción, diseño y profesionalidad queremos ofrecerte nuestros mejores servicios en todo tipo de reformas, rehabilitaciones y obras."
+      "subtitle_1": "Desde el primer contacto, nos dedicamos a comprender y materializar tu visión. Nos guía un firme compromiso de superar expectativas, asegurando que cada proyecto brille con excelencia y meticulosidad. Nuestra distinción radica en la combinación perfecta de construcción, diseño y profesionalidad. No solo construimos; fusionamos técnica y estética para que cada espacio refleje autenticidad y funcionalidad.",
+      "subtitle_2": "Nuestro equipo multidisciplinario se centra en soluciones innovadoras, independientemente de si es una pequeña reforma o un proyecto de gran envergadura. Nuestro sello en cada obra es la pasión, experiencia y una inquebrantable dedicación al arte constructivo y de diseño."
     },
     "services": {
       "header": "CALIDAD DESDE EL MÍNIMO DETALLE",
       "title": "Tu satisfacción es nuestro principal objetivo.",
-      "subtitle": "Trabajamos desde la transparencia para generar relaciones con nuestros clientes basadas en la confianza. Queremos ayudarte en todo el proceso a seguir para lograr tu espacio soñado, para ello contamos con un equipo formado por personal cualificado."
+      "subtitle_1": "La transparencia es el pilar fundamental de nuestro trabajo, y es a través de ella que buscamos forjar relaciones sólidas y duraderas con nuestros clientes. Creemos que una comunicación abierta y sincera es esencial para entender tus necesidades y visiones, permitiéndonos así construir espacios que reflejen tus sueños. Es este compromiso el que nos ha permitido establecer lazos de confianza, donde cada cliente se siente respaldado y acompañado durante todo el proceso.",
+      "subtitle_2": "Nuestro diferenciador radica en el talentoso equipo con el que contamos. Profesionales altamente cualificados que no sólo aportan su experiencia técnica, sino también una pasión inquebrantable por la excelencia. Su dedicación asegura que cada proyecto, sin importar su envergadura, se lleva a cabo con precisión, atención al detalle y, sobre todo, con el corazón puesto en hacer realidad tu espacio soñado."
     }
   },
   "ProjectsPage": {
@@ -44,10 +55,10 @@
       "title": "REFORMAS INTEGRALES",
       "button": "Ver más"
     },
-    "service_1": "REFORMAS INTEGRALES",
-    "service_2": "FACHADAS",
-    "service_3": "EXTERIORES",
-    "service_4": "BAÑOS"
+    "service_1": "VIVIENDAS",
+    "service_2": "EXTERIORES",
+    "service_3": "BAÑOS",
+    "service_4": "COCINAS"
   },
   "AboutPage": {
     "title": "DESCUBRE NUESTRO EQUIPO",

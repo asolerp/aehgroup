@@ -13,6 +13,19 @@ const config: Config = {
         aeh_secondary: '#EFE9E2',
         aeh_tertiary: '#3F5032',
         aeh_quaternary: '#A5A5A5',
+        aeh: {
+          '50': '#f5f8f6',
+          '100': '#dfe8e4',
+          '200': '#bfd0c9',
+          '300': '#98b0a7',
+          '400': '#759287',
+          '500': '#577569',
+          '600': '#445d54',
+          '700': '#394c45',
+          '800': '#313e3a',
+          '900': '#2b3632',
+          '950': '#161d1b',
+        },
       },
       backgroundImage: {
         aeh_bg_1:

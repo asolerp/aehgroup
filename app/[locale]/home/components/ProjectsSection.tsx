@@ -39,14 +39,21 @@ export default function ProjectsSection() {
             width={1400}
             height={1000}
             className="w-full h-[300px] lg:h-[1000px] object-cover"
-            src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_2.png"
+            src="https://res.cloudinary.com/caskchain/image/upload/v1697697802/AEHGroup/S9/Serralet-2.jpg"
           />
           <Image
             alt=""
             width={1400}
             height={1000}
             className="w-full h-[300px] lg:h-[1000px] object-cover"
-            src="https://res.cloudinary.com/caskchain/image/upload/v1695035708/AEHGroup/aeh_bg_1.png"
+            src="https://res.cloudinary.com/caskchain/image/upload/v1697699058/AEHGroup/JV22/JV22-16-min.jpg"
+          />
+          <Image
+            alt=""
+            width={1400}
+            height={1000}
+            className="w-full h-[300px] lg:h-[1000px] object-cover"
+            src="https://res.cloudinary.com/caskchain/image/upload/v1697698150/AEHGroup/B55/B55-46-min.jpg"
           />
         </Carousel>
         <div className="w-full lg:px-10 px-2 absolute z-10 bottom-4 lg:bottom-14 flex flex-row items-center justify-between">

@@ -32,7 +32,7 @@ const Home = () => {
         <Spacer className="mb-10 lg:mb-32" />
         <div className="flex flex-row justify-center lg:px-0 px-6 ">
           <Image
-            src="https://res.cloudinary.com/caskchain/image/upload/v1695214338/AEHGroup/aeh_bg_4.png"
+            src="https://res.cloudinary.com/caskchain/image/upload/v1697697796/AEHGroup/MOODBOARD_MATERIALES.jpg"
             alt="AEH Group Services"
             width={900}
             height={900}
