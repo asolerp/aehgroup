@@ -31,13 +31,15 @@ export default function ProjectScreen() {
   return (
     <>
       {isViewerOpen && (
-        <ImageViewer
-          src={project.images}
-          currentIndex={currentImage}
-          disableScroll={false}
-          closeOnClickOutside={true}
-          onClose={closeImageViewer}
-        />
+        <div className="absolute w-full h-full z-50">
+          <ImageViewer
+            src={project.images}
+            currentIndex={currentImage}
+            disableScroll={false}
+            closeOnClickOutside={true}
+            onClose={closeImageViewer}
+          />
+        </div>
       )}
       <LayoutWithMainTitleAnimation title={project?.title || ''}>
         {project ? (
