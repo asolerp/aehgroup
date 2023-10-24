@@ -46,7 +46,7 @@ const Project: React.FC<any> = ({ project, orientation = 'left' }) => {
         </p>
         <Link href={`proyectos/${project.title}`}>
           <h2
-            className={`font-sans text-lg  lg:text-2xl text-aeh-700 tracking-widest text-left lg:text-right underline ${orientationClassName}`}
+            className={`font-sans text-lg  lg:text-2xl text-aeh-700 tracking-widest underline ${orientationClassName}`}
           >
             {t('seeMore')}
           </h2>
