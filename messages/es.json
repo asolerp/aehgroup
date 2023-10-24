@@ -101,7 +101,9 @@
       "message": "Mensaje*",
       "placeholder_message": "Cuéntanos tu proyecto..",
       "conditions": "He leído y acepto la política de privacidad",
-      "send": "Enviar"
+      "send": "Enviar",
+      "success": "¡Gracias por contactar con nosotros! Te responderemos lo antes posible.",
+      "error": "Ha ocurrido un error, inténtalo de nuevo más tarde."
     }
   }
 }

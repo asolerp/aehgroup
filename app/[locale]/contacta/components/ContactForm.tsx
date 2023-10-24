@@ -4,6 +4,7 @@ import useContactForm from '../hooks/useContactForm'
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import Spacer from '@/app/components/Spacer'
+import { toast } from 'react-toastify'
 
 export default function ContactForm() {
   const [aceptaPoliticas, setAceptaPoliticas] = useState(false)
@@ -15,10 +16,17 @@ export default function ContactForm() {
   } = useForm()
 
   const t = useTranslations('ContactPage.form')
+
   const { sendContactForm } = useContactForm()
 
   const onSubmit = async (data: any) => {
-    await sendContactForm(data)
+    try {
+      await sendContactForm(data)
+      toast.success(t('success'))
+      reset()
+    } catch {
+      toast.error(t('error'))
+    }
   }
 
   return (

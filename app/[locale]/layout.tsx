@@ -2,6 +2,9 @@ import { NextIntlClientProvider, createTranslator } from 'next-intl'
 import { notFound } from 'next/navigation'
 import MainLayout from '../components/MainLayout'
 import { ReactNode } from 'react'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 import Script from 'next/script'
 
 type Props = {
@@ -52,15 +55,9 @@ export default async function LocaleLayout({
         id="cookieyes"
         type="text/javascript"
       />
-      {/* <head>
-        <script
-          id="cookieyes"
-          type="text/javascript"
-          src="https://cdn-cookieyes.com/client_data/ba962d7afd13c79e2665a087/script.js"
-        ></script>
-      </head> */}
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <ToastContainer />
           <MainLayout>{children}</MainLayout>
         </NextIntlClientProvider>
       </body>
