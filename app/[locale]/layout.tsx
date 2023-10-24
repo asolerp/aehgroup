@@ -48,7 +48,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <Script
-        src="https://cdn-cookieyes.com/client_data/85f70b64ca0ddf5add21f322/script.js"
+        src="https://cdn-cookieyes.com/client_data/ba962d7afd13c79e2665a087/script.js"
         id="cookieyes"
         type="text/javascript"
       />
