@@ -19,7 +19,7 @@ export default function Commitment() {
       </div>
       <div className="relative w-full h-screen overflow-hidden bg-cover bg-[50%] bg-no-repeat lg:hidden">
         <Image
-          src="https://res.cloudinary.com/caskchain/image/upload/v1697697796/AEHGroup/PP50/PP50-2.jpg"
+          src="https://res.cloudinary.com/caskchain/image/upload/v1697697796/AEHGroup/PP50/PP50-1.jpg"
           alt="AEH Group"
           width={500}
           height={300}
