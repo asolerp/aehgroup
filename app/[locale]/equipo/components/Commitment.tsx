@@ -10,7 +10,7 @@ export default function Commitment() {
     <div className="h-screen lg:grid lg:grid-cols-2">
       <div className="hidden lg:block col-span-1">
         <Image
-          src="https://res.cloudinary.com/caskchain/image/upload/v1697697796/AEHGroup/PP50/PP50-2.jpg"
+          src="https://res.cloudinary.com/caskchain/image/upload/v1697697796/AEHGroup/PP50/PP50-1.jpg"
           alt="AEH Group"
           width={500}
           height={300}
