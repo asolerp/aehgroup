@@ -5,6 +5,7 @@ type Props = {
   text: string
   disabled?: boolean
   outline?: boolean
+  onClick: () => void
   mode?: 'primary' | 'secondary'
 }
 
@@ -21,6 +22,7 @@ const Button: React.FC<Props> = ({
   text,
   mode = 'primary',
   outline = false,
+  onClick,
   disabled,
 }) => {
   const icon =
@@ -38,6 +40,7 @@ const Button: React.FC<Props> = ({
 
   return (
     <motion.div
+      onClick={onClick}
       whileHover="hover"
       className={`flex flex-row w-fit items-center justify-between ${bgContainer} ${
         disabled ? 'opacity-60' : ''

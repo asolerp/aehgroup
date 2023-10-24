@@ -9,11 +9,10 @@ import AboutUsSection from './components/AboutUsSection'
 
 import ProjectsSection from './components/ProjectsSection'
 import ServicesSection from './components/ServicesSection'
-import { Parallax, ParallaxBanner } from 'react-scroll-parallax'
 
 import Spacer from '../../components/Spacer'
 import { useTranslations } from 'next-intl'
-import { motion } from 'framer-motion'
+
 import HeroSection from './components/HeroSection'
 
 const Home = () => {

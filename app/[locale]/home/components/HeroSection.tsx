@@ -4,9 +4,11 @@ import Spacer from '@/app/components/Spacer'
 import { useTranslations } from 'next-intl'
 import Button from '@/app/components/Button'
 import Link from 'next/link'
+import { useRouter } from 'next-intl/client'
 
 export default function HeroSection() {
   const t = useTranslations('HomePage')
+  const router = useRouter()
   return (
     <div className="w-full">
       <Parallax scale={[1, 0.8]} shouldAlwaysCompleteAnimation>
@@ -39,9 +41,11 @@ export default function HeroSection() {
                   {t('title')}
                 </h1>
                 <Spacer className="mb-2 lg:mb-12" />
-                <Link href="/contacta">
-                  <Button text={t('hero.button')} outline />
-                </Link>
+                <Button
+                  text={t('hero.button')}
+                  onClick={() => router.push('/contacta')}
+                  outline
+                />
               </motion.div>
             </div>
           </>

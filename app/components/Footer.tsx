@@ -3,10 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import TranslateYAnimation from './Animations/TranslateYAnimation'
+import { useRouter } from 'next-intl/client'
 
 export default function Footer() {
   const t = useTranslations('Footer')
   const t_menu = useTranslations('Menu')
+  const router = useRouter()
   return (
     <div className="bg-aeh_secondary px-6 lg:px-20 divide-y-2 divide-aeh-700">
       <div className="flex flex-col items-start lg:grid lg:grid-cols-4 lg:gap-4 py-10 space-y-6 lg:space-y-0">
@@ -15,39 +17,44 @@ export default function Footer() {
             Menu
           </p>
           <TranslateYAnimation>
-            <Link href="/contacta">
-              <p className="font-sans text-[15px] lg:text-lg tracking-widest text-aeh-700">
-                {t_menu('home')}
-              </p>
-            </Link>
+            <p
+              onClick={() => router.push('/home')}
+              className="cursor-pointer font-sans text-[15px] lg:text-lg tracking-widest text-aeh-700"
+            >
+              {t_menu('home')}
+            </p>
           </TranslateYAnimation>
           <TranslateYAnimation>
-            <Link href="/proyectos">
-              <p className="font-sans text-[15px] lg:text-lg tracking-widest text-aeh-700">
-                {t_menu('projects')}
-              </p>
-            </Link>
+            <p
+              onClick={() => router.push('/proyectos')}
+              className="cursor-pointer font-sans text-[15px] lg:text-lg tracking-widest text-aeh-700"
+            >
+              {t_menu('projects')}
+            </p>
           </TranslateYAnimation>
           <TranslateYAnimation>
-            <Link href="/servicios">
-              <p className="font-sans text-[15px] lg:text-lg tracking-widest text-aeh-700">
-                {t_menu('services')}
-              </p>
-            </Link>
+            <p
+              onClick={() => router.push('/servicios')}
+              className="cursor-pointer font-sans text-[15px] lg:text-lg tracking-widest text-aeh-700"
+            >
+              {t_menu('services')}
+            </p>
           </TranslateYAnimation>
           <TranslateYAnimation>
-            <Link href="/equipo">
-              <p className="font-sans text-[15px] lg:text-lg tracking-widest text-aeh-700">
-                {t_menu('about')}
-              </p>
-            </Link>
+            <p
+              onClick={() => router.push('/equipo')}
+              className="cursor-pointer font-sans text-[15px] lg:text-lg tracking-widest text-aeh-700"
+            >
+              {t_menu('about')}
+            </p>
           </TranslateYAnimation>
           <TranslateYAnimation>
-            <Link href="/contacta">
-              <p className="font-sans text-[15px] lg:text-lg tracking-widest text-aeh-700">
-                {t_menu('contact')}
-              </p>
-            </Link>
+            <p
+              onClick={() => router.push('/contacta')}
+              className="cursor-pointer font-sans text-[15px] lg:text-lg tracking-widest text-aeh-700"
+            >
+              {t_menu('contact')}
+            </p>
           </TranslateYAnimation>
         </div>
         <div className="col-span-1 lg:px-10 flex flex-col justify-end">

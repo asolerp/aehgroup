@@ -7,10 +7,12 @@ import { Carousel } from 'react-responsive-carousel'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
+import { useRouter } from 'next-intl/client'
 
 export default function ProjectsSection() {
   const t = useTranslations('HomePage')
   const carouselRef = useRef<any>(null)
+  const router = useRouter()
 
   const handleNextClick = () => {
     if (carouselRef.current) {
@@ -57,9 +59,11 @@ export default function ProjectsSection() {
           />
         </Carousel>
         <div className="w-full lg:px-10 px-2 absolute z-10 bottom-4 lg:bottom-14 flex flex-row items-center justify-between">
-          <Link href="/proyectos">
-            <Button text={t('buttons.projects')} mode="secondary" />
-          </Link>
+          <Button
+            text={t('buttons.projects')}
+            mode="secondary"
+            onClick={() => router.push('/proyectos')}
+          />
           <div className="flex flex-row space-x-5">
             <motion.img
               whileHover={{ scale: 1.1 }}

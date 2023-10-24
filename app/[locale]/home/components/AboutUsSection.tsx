@@ -3,10 +3,11 @@ import Button from '@/app/components/Button'
 import FadeInAnimation from '@/app/components/Animations/FadeInAnimation'
 import Spacer from '@/app/components/Spacer'
 import { useTranslations } from 'next-intl'
-import Link from 'next/link'
+import { useRouter } from 'next-intl/client'
 
 export default function AboutUsSection() {
   const t = useTranslations('HomePage')
+  const router = useRouter()
   return (
     <div className="px-6 md:px-10 lg:px-32">
       <div className="w-full">
@@ -22,9 +23,11 @@ export default function AboutUsSection() {
       <div className="flex flex-col-reverse">
         <div className="">
           <FadeInAnimation>
-            <Link href="/equipo">
-              <Button mode="primary" text={t('buttons.about')} />
-            </Link>
+            <Button
+              mode="primary"
+              text={t('buttons.about')}
+              onClick={() => router.push('/equipo')}
+            />
           </FadeInAnimation>
         </div>
         <Spacer className="h-0 lg:h-10" />

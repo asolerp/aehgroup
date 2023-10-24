@@ -9,6 +9,7 @@ import debounce from 'lodash.debounce'
 
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 import { useTranslations } from 'next-intl'
+import { useRouter } from 'next-intl/client'
 
 const variants: Variants = {
   hidden: { opacity: 0, y: -50 },
@@ -29,7 +30,7 @@ const LOGO_ROUTE =
 export default function NavBar() {
   const { setMenuOpen, menuOpen } = useMenuContext()
   const t = useTranslations('Menu')
-
+  const router = useRouter()
   const handleMenuToggle = debounce((state) => {
     setMenuOpen(state)
   }, 300)
@@ -53,22 +54,24 @@ export default function NavBar() {
               shouldAlwaysCompleteAnimation={true}
               className="flex flex-row justify-between items-center w-full px-5 lg:px-0"
             >
-              <Link href="/home">
-                <Image
-                  src={LOGO_ROUTE}
-                  alt="AEH Group"
-                  width={100}
-                  height={100}
-                  className="w-[65px] h-[45px] lg:w-[110px] lg:h-[70px]"
-                />
-              </Link>
+              <Image
+                onClick={() => router.push('/home')}
+                src={LOGO_ROUTE}
+                alt="AEH Group"
+                width={100}
+                height={100}
+                className="w-[65px] h-[45px] lg:w-[110px] lg:h-[70px]"
+              />
+
               <div className="lg:flex lg:flex-row flex-grow justify-center space-x-20 hidden">
                 {linkItems.map((item, index) => (
-                  <Link key={index} href={item.href}>
-                    <p className="font-sans text-xl font-light text-aeh-800">
-                      {t(item.text)}
-                    </p>
-                  </Link>
+                  <p
+                    key={index}
+                    onClick={() => router.push(item.href)}
+                    className="cursor-pointer font-sans text-xl font-light text-aeh-800"
+                  >
+                    {t(item.text)}
+                  </p>
                 ))}
               </div>
               <div className="hidden lg:block lg:w-[100px]"></div>

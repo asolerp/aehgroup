@@ -1,14 +1,15 @@
 import Button from '@/app/components/Button'
 import Image from 'next/image'
-import ScaleYAnimation from '@/app/components/Animations/ScaleYAnimation'
-import { Parallax } from 'react-scroll-parallax'
+
 import FadeInAnimation from '@/app/components/Animations/FadeInAnimation'
 import Spacer from '@/app/components/Spacer'
 import { useTranslations } from 'next-intl'
-import Link from 'next/link'
+
+import { useRouter } from 'next-intl/client'
 
 export default function ServicesSection() {
   const t = useTranslations('HomePage')
+  const router = useRouter()
 
   return (
     <div className="flex flex-col items-center">
@@ -104,9 +105,11 @@ export default function ServicesSection() {
           <Spacer className="h-0 lg:h-10" />
           <div className="flex flex-col justify-start items-start lg:items-start">
             <FadeInAnimation>
-              <Link href="/servicios">
-                <Button mode="primary" text={t('buttons.services')} />
-              </Link>
+              <Button
+                mode="primary"
+                onClick={() => router.push('/servicios')}
+                text={t('buttons.services')}
+              />
             </FadeInAnimation>
           </div>
         </div>
